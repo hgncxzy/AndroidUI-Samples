@@ -1,16 +1,16 @@
-package com.xzy.ui;
+package com.xzy.dialog.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.View;
 
+import com.xzy.dialog.R;
 
-public class MainActivity extends AppCompatActivity{
+public class TimePicker extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_time_picker);
     }
 }
