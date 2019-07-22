@@ -249,3 +249,82 @@ DialogUtils.showAlert(DialogActivity.this,
                         }).show();
 ```
 
+### 使用 SelectDialog
+
+#### 1. MD 风格的多选框
+
+```java
+ String[] words = new String[]{"1", "2", "3"};
+                        boolean[] choseDefault = new boolean[]{false, false, false};
+                        DialogUtils.showMdMultiChoose(SelectDialogActivity.this,
+                                "标题",
+                                words,
+                                choseDefault,
+                                new DialogUIListener() {
+                                    @Override
+                                    public void onPositive() {
+
+                                    }
+
+                                    @Override
+                                    public void onNegative() {
+
+                                    }
+                                }).show();
+```
+
+
+
+#### 2. MD 风格的竖向列表
+
+```java
+ List<TieBean> datas3 = new ArrayList<>();
+                        datas3.add(new TieBean("1"));
+                        datas3.add(new TieBean("2"));
+                        datas3.add(new TieBean("3"));
+                        datas3.add(new TieBean("4"));
+                        datas3.add(new TieBean("5"));
+                        datas3.add(new TieBean("6"));
+                        DialogUtils.showMdBottomSheet(SelectDialogActivity.this,
+                                true,
+                                "标题",
+                                datas3,
+                                "",
+                                0,
+                                new DialogUIItemListener() {
+                                    @Override
+                                    public void onItemClick(CharSequence text, int position) {
+                                        showToast(text + "---" + position);
+                                    }
+                                }).show();
+```
+
+#### 3. MD 风格的横向列表
+
+```java
+List<TieBean> datas2 = new ArrayList<>();
+                        datas2.add(new TieBean("1"));
+                        datas2.add(new TieBean("2"));
+                        datas2.add(new TieBean("3"));
+                        datas2.add(new TieBean("4"));
+                        datas2.add(new TieBean("5"));
+                        datas2.add(new TieBean("6"));
+                        TieAdapter adapter = new TieAdapter(SelectDialogActivity.this,
+                                datas2);
+                        BuildBean buildBean = DialogUtils.showMdBottomSheet(
+                                SelectDialogActivity.this,
+                                false,
+                                "",
+                                datas2,
+                                "",
+                                4,
+                                new DialogUIItemListener() {
+                                    @Override
+                                    public void onItemClick(CharSequence text, int position) {
+                                        showToast(text + "---" + position);
+                                    }
+                                });
+                        buildBean.mAdapter = adapter;
+                        buildBean.show();
+```
+
