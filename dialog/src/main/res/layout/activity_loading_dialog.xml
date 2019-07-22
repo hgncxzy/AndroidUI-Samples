@@ -1,9 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".activity.LoadingDialog">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/horizontalLoading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str6"/>
+    <Button
+        android:id="@+id/verticalLoading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str7"/>
+    <Button
+        android:id="@+id/horizontalLoadingGray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str8"/>
+    <Button
+        android:id="@+id/verticalLoadingGray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str9"/>
+    <Button
+        android:id="@+id/mdStyleHorizontalLoading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str10"/>
+    <Button
+        android:id="@+id/mdStyleVerticalLoading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str11"/>
+</LinearLayout>

@@ -5,4 +5,16 @@
     <string name="str3">各种对话框</string>
     <string name="str4">各种列表选择框</string>
     <string name="str5">时间选择框</string>
+
+    <string name="str6">横向loading</string>
+    <string name="str7">纵向loading</string>
+    <string name="str8">横向loading 灰色</string>
+    <string name="str9">纵向loading 灰色</string>
+    <string name="str10">MD 风格横向loading</string>
+    <string name="str11">MD 风格垂直loading</string>
+
+
+    <string name="str12">时间选择框</string>
+    <string name="str13">时间选择框</string>
+    <string name="str14">时间选择框</string>
 </resources>

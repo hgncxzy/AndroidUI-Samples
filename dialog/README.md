@@ -45,3 +45,41 @@ private void initPopupWindow(View view){
     }
 ```
 
+### 使用 LoadingDialog
+
+#### 1. 横向 
+
+```java
+DialogUtils.showLoadingHorizontal(LoadingDialog.this, "加载中...").show();
+```
+
+#### 2. 竖向 
+
+```java
+DialogUtils.showLoadingVertical(LoadingDialog.this, "加载中...").show();
+```
+
+#### 3. 横向灰色
+
+```java
+DialogUtils.showLoadingHorizontal(LoadingDialog.this,"加载中...", false).show();
+```
+
+#### 4. 竖向灰色
+
+```java
+DialogUtils.showLoadingVertical(LoadingDialog.this, "加载中...", false).show();
+```
+
+#### 5. MD 风格的横向
+
+```java
+DialogUtils.showMdLoadingHorizontal(LoadingDialog.this,"加载中...").show();
+```
+
+#### 6. MD 风格的竖向
+
+```java
+DialogUtils.showMdLoadingVertical(LoadingDialog.this,"加载中...").show();
+```
+
