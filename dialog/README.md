@@ -395,3 +395,48 @@ DialogUtils.showTimePickView(TimePickerActivity.this,
                         });
 ```
 
+### 地址联动选择
+
+#### 1. 仿京东地址选择
+
+```java
+ final BottomDialog dialog1 = DialogUtils
+                                .showAddressDialog(AddressActivity.this);
+                        dialog1.setOnAddressSelectedListener(new OnAddressSelectedListener() {
+                            @Override
+                            public void onAddressSelected(ProvinceModel province,
+                                                          CityModel city,
+                                                          DistrictModel county) {
+                                String s = (province == null ? "" : province.getName()) +
+                                        (city == null ? "" : "\n" + city.getName()) +
+                                        (county == null ? "" : "\n" + county.getName());
+                                showToast(s);
+                                dialog1.dismiss();
+                            }
+                        });
+```
+
+#### 2. 通用地址选择
+
+```java
+final DefaultAddressProvider addressProvider = new
+                                DefaultAddressProvider(AddressActivity.this);
+                        DialogUtils.showAddrPickView(AddressActivity.this,
+                                "选择地址",
+                                addressProvider,
+                                new OptionsPickerView.OnOptionsSelectListener() {
+                                    @Override
+                                    public void onOptionsSelect(int options1, int option2, int options3) {
+                                        String tx = addressProvider.provideProvince().get(options1)
+                                                + addressProvider.provideCities().get(options1).get(option2)
+                                                + addressProvider.provideCounties().get(options1)
+                                                .get(option2).get(options3).getPickerViewText()
+                                                + addressProvider.provideZipCode()
+                                                .get(addressProvider.provideCounties()
+                                                        .get(options1).get(option2)
+                                                        .get(options3).getPickerViewText());
+                                        ToastUitl.showToast(tx);
+                                    }
+                                });
+```
+

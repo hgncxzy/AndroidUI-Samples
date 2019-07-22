@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.widget.jcdialog.DialogUtils;
+import com.xzy.dialog.activity.AddressActivity;
 import com.xzy.dialog.activity.DialogActivity;
 import com.xzy.dialog.activity.LoadingDialogActivity;
 import com.xzy.dialog.activity.PopupWindowActivity;
@@ -63,6 +64,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, TimePickerActivity.class));
+            }
+        });
+        findViewById(R.id.addressPicker).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, AddressActivity.class));
             }
         });
     }
