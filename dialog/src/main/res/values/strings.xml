@@ -32,4 +32,9 @@
     <string name="str21">MD 风格多选框</string>
     <string name="str22">MD 风格底部竖向列表</string>
     <string name="str23">MD 风格底部横向列表</string>
+
+    <string name="str24">选择日期年月日</string>
+    <string name="str25">选择日期年月日时分</string>
+    <string name="str26">选择日期年月日时分秒</string>
+    <string name="str27">日期年月日时分</string>
 </resources>

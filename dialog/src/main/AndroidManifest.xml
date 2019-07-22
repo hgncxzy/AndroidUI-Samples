@@ -11,7 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".activity.TimePickerActivity"/>
+        <activity android:name=".activity.AddressActivity"></activity>
+        <activity android:name=".activity.TimePickerActivity" />
         <activity android:name=".activity.SelectDialogActivity" />
         <activity android:name=".activity.DialogActivity" />
         <activity android:name=".activity.LoadingDialogActivity" />

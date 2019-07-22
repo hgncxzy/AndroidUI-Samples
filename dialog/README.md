@@ -328,3 +328,70 @@ List<TieBean> datas2 = new ArrayList<>();
                         buildBean.show();
 ```
 
+### 时间日期选择器
+
+#### 1. 选择年月日
+
+```java
+DialogUtils.showDatePick(TimePickerActivity.this,
+                        Gravity.CENTER,
+                        "选择日期",
+                        System.currentTimeMillis() + 60000,
+                        DateSelectorWheelView.TYPE_YYYYMMDD,
+                        0,
+                        new DialogUIDateTimeSaveListener() {
+                            @Override
+                            public void onSaveSelectedDate(int tag, String selectedDate) {
+                                showToast(selectedDate);
+                            }
+                        }).show();
+```
+
+#### 2. 选择年月日时分
+
+```java
+DialogUtils.showDatePick(TimePickerActivity.this,
+                        Gravity.CENTER,
+                        "选择日期",
+                        System.currentTimeMillis() + 60000,
+                        DateSelectorWheelView.TYPE_YYYYMMDDHHMM,
+                        0,
+                        new DialogUIDateTimeSaveListener() {
+                            @Override
+                            public void onSaveSelectedDate(int tag, String selectedDate) {
+                                showToast(selectedDate);
+                            }
+                        }).show();
+```
+
+#### 3. 选择年月日时分秒
+
+```java
+DialogUtils.showDatePick(TimePickerActivity.this,
+                        Gravity.BOTTOM,
+                        "选择日期",
+                        System.currentTimeMillis() + 60000,
+                        DateSelectorWheelView.TYPE_YYYYMMDDHHMMSS,
+                        0,
+                        new DialogUIDateTimeSaveListener() {
+                            @Override
+                            public void onSaveSelectedDate(int tag, String selectedDate) {
+                                showToast(selectedDate);
+                            }
+                        }).show();
+```
+
+#### 4. 日期年月日时分
+
+```java
+DialogUtils.showTimePickView(TimePickerActivity.this,
+                        "选择日期",
+                        TimePickerView.Type.ALL,
+                        new TimePickerView.OnTimeSelectListener() {
+                            @Override
+                            public void onTimeSelect(Date date) {
+                                ToastUitl.showToast(getTime(date));
+                            }
+                        });
+```
+
