@@ -14,7 +14,20 @@
     <string name="str11">MD 风格垂直loading</string>
 
 
-    <string name="str12">时间选择框</string>
-    <string name="str13">时间选择框</string>
-    <string name="str14">时间选择框</string>
+    <string name="str12">自定义弹出框</string>
+    <string name="str13">自定义底部弹出框</string>
+    <string name="str14">MD 风格弹出窗</string>
+    <string name="str15">纯文本 Dialog</string>
+    <string name="str16">提示框</string>
+    <string name="str17">横向弹出框</string>
+    <string name="str18">竖向弹出窗</string>
+    <string name="str19">输入框</string>
+
+    <string name="str20">有时候原谅一个人是因为太在乎，所以一让再让；有时候不去吵是因为舍不得，
+        所以一忍再忍。感情，是两心的慢慢磨合；相处，是两人的相互退让。一颗心，始终不愿放弃，
+        是知道一路走来有多么的不易；一个人总是默默守候，是懂得太多的风雨与共需要莫大的勇气。其实，
+        这世上没有谁属于谁，只会有谁会陪着谁。感情，从青涩到味浓，再从味浓到平淡，
+        丢弃了自己的小情绪，只为慢慢适应对方。爱是两个人之间的互动；情是两颗心之间的习惯！</string>
+
+
 </resources>

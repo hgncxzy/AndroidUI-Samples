@@ -1,96 +1,37 @@
-# Dialog 项目使用说明文档
-### 使用步骤
+package com.xzy.dialog.activity;
 
-#### 1. 引入第三方库
+import androidx.appcompat.app.AppCompatActivity;
 
-```groovy
- implementation 'com.liujc.util:jcdialog:1.0.1'
-```
+import android.app.Dialog;
+import android.os.Bundle;
+import android.view.Gravity;
+import android.view.View;
 
+import com.widget.jcdialog.DialogUtils;
+import com.widget.jcdialog.listener.DialogUIListener;
+import com.xzy.dialog.R;
 
+import static com.widget.jcdialog.utils.ToastUitl.showToast;
 
-#### 2. 初始化 DialogUtils
+/**
+ * 对话框使用 demo。
+ *
+ * @author xzy
+ */
+public class DialogActivity extends AppCompatActivity {
 
-```java
-DialogUtils.init(mContext);
-```
-
-### 使用 PopupWindow
-
-```java
-private void initPopupWindow(View view){
-        // 初始化 PopuWindowView
-        final PopuWindowView popuWindowView = new PopuWindowView(this,
-                LinearLayout.LayoutParams.WRAP_CONTENT);
-        // 绑定数据和点击事件
-        popuWindowView.initPupoData(new TdataListener() {
-            @Override
-            public void initPupoData(List<PopuBean> lists) {
-                for (int i = 0; i < 5; i++) {
-                    PopuBean popu = new PopuBean();
-                    popu.setTitle("item"+i);
-                    popu.setId(i);
-                    lists.add(popu);
-                }
-            }
-
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int position) {
-                showToast(popuWindowView.getTitle(position));
-                popuWindowView.dismiss();
-            }
-        });
-        // 展示 PopuWindowView
-        popuWindowView.showing(view);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_dialog);
+        handle();
     }
-```
 
-### 使用 LoadingDialog
-
-#### 1. 横向 
-
-```java
-DialogUtils.showLoadingHorizontal(LoadingDialog.this, "加载中...").show();
-```
-
-#### 2. 竖向 
-
-```java
-DialogUtils.showLoadingVertical(LoadingDialog.this, "加载中...").show();
-```
-
-#### 3. 横向灰色
-
-```java
-DialogUtils.showLoadingHorizontal(LoadingDialog.this,"加载中...", false).show();
-```
-
-#### 4. 竖向灰色
-
-```java
-DialogUtils.showLoadingVertical(LoadingDialog.this, "加载中...", false).show();
-```
-
-#### 5. MD 风格的横向
-
-```java
-DialogUtils.showMdLoadingHorizontal(LoadingDialog.this,"加载中...").show();
-```
-
-#### 6. MD 风格的竖向
-
-```java
-DialogUtils.showMdLoadingVertical(LoadingDialog.this,"加载中...").show();
-```
-
-### 使用 Dialog
-
-自定义文件 custom_dialog_layout.xml
-
-#### 1. 自定义
-
-```java
-View rootView = View.inflate(DialogActivity.this,
+    private void handle() {
+        findViewById(R.id.normalDialog).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                View rootView = View.inflate(DialogActivity.this,
                         R.layout.custom_dialog_layout, null);
                 final Dialog dialog = DialogUtils
                         .showCustomAlert(DialogActivity.this,
@@ -107,22 +48,22 @@ View rootView = View.inflate(DialogActivity.this,
                                 DialogUtils.dismiss(dialog);
                             }
                         });
-```
-
-#### 2. 自定义底部
-
-```java
- View rootViewB = View.inflate(DialogActivity.this,
+            }
+        });
+        findViewById(R.id.bottomDialog).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                View rootViewB = View.inflate(DialogActivity.this,
                         R.layout.custom_dialog_layout,
                         null);
                 DialogUtils.showCustomBottomAlert(DialogActivity.this,
                         rootViewB).show();
-```
-
-#### 3. MD 风格
-
-```java
-DialogUtils.showMdAlert(DialogActivity.this,
+            }
+        });
+        findViewById(R.id.mdStyleDialog).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                DialogUtils.showMdAlert(DialogActivity.this,
                         "标题",
                         "内容",
                         new DialogUIListener() {
@@ -137,19 +78,19 @@ DialogUtils.showMdAlert(DialogActivity.this,
                             }
 
                         }).show();
-```
-
-#### 4. 纯文本
-
-```java
-DialogUtils.showDialogTie(DialogActivity.this,
+            }
+        });
+        findViewById(R.id.textDialog).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                DialogUtils.showDialogTie(DialogActivity.this,
                         "纯文本 Dialog").show();
-```
-
-#### 5. 提示框
-
-```java
-DialogUtils.showAlert(DialogActivity.this,
+            }
+        });
+        findViewById(R.id.tipsDialog).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                DialogUtils.showAlert(DialogActivity.this,
                         "标题",
                         "提示框",
                         "aaa",
@@ -169,12 +110,12 @@ DialogUtils.showAlert(DialogActivity.this,
                             }
 
                         }).show();
-```
-
-#### 6. 水平
-
-```java
-DialogUtils.showAlert(DialogActivity.this,
+            }
+        });
+        findViewById(R.id.horizontalDialog).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                DialogUtils.showAlert(DialogActivity.this,
                         "标题",
                         "内容",
                         "aaa",
@@ -193,12 +134,12 @@ DialogUtils.showAlert(DialogActivity.this,
                             }
 
                         }).show();
-```
-
-#### 7. 竖向
-
-```java
-DialogUtils.showAlert(DialogActivity.this,
+            }
+        });
+        findViewById(R.id.verticalDialog).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                DialogUtils.showAlert(DialogActivity.this,
                         "标题",
                         "内容",
                         "aaa",
@@ -218,12 +159,12 @@ DialogUtils.showAlert(DialogActivity.this,
                             }
 
                         }).show();
-```
-
-#### 8. 输入框
-
-```java
-DialogUtils.showAlert(DialogActivity.this,
+            }
+        });
+        findViewById(R.id.inputDialog).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                DialogUtils.showAlert(DialogActivity.this,
                         "登录",
                         "",
                         "请输入用户名",
@@ -247,5 +188,7 @@ DialogUtils.showAlert(DialogActivity.this,
                                 showToast("input1:" + input1 + "--input2:" + input2);
                             }
                         }).show();
-```
-
+            }
+        });
+    }
+}

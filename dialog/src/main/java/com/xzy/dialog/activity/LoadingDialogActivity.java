@@ -13,7 +13,7 @@ import com.xzy.dialog.R;
  *
  * @author xzy
  */
-public class LoadingDialog extends AppCompatActivity {
+public class LoadingDialogActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +27,7 @@ public class LoadingDialog extends AppCompatActivity {
                 .setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        DialogUtils.showLoadingHorizontal(LoadingDialog.this,
+                        DialogUtils.showLoadingHorizontal(LoadingDialogActivity.this,
                                 "加载中...").show();
                     }
                 });
@@ -35,7 +35,7 @@ public class LoadingDialog extends AppCompatActivity {
                 .setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        DialogUtils.showLoadingVertical(LoadingDialog.this,
+                        DialogUtils.showLoadingVertical(LoadingDialogActivity.this,
                                 "加载中...").show();
                     }
                 });
@@ -43,7 +43,7 @@ public class LoadingDialog extends AppCompatActivity {
                 .setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        DialogUtils.showLoadingHorizontal(LoadingDialog.this,
+                        DialogUtils.showLoadingHorizontal(LoadingDialogActivity.this,
                                 "加载中...", false).show();
                     }
                 });
@@ -51,7 +51,7 @@ public class LoadingDialog extends AppCompatActivity {
                 .setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        DialogUtils.showLoadingVertical(LoadingDialog.this,
+                        DialogUtils.showLoadingVertical(LoadingDialogActivity.this,
                                 "加载中...", false).show();
                     }
                 });
@@ -59,7 +59,7 @@ public class LoadingDialog extends AppCompatActivity {
                 .setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        DialogUtils.showMdLoadingHorizontal(LoadingDialog.this,
+                        DialogUtils.showMdLoadingHorizontal(LoadingDialogActivity.this,
                                 "加载中...").show();
                     }
                 });
@@ -67,7 +67,7 @@ public class LoadingDialog extends AppCompatActivity {
                 .setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        DialogUtils.showMdLoadingVertical(LoadingDialog.this,
+                        DialogUtils.showMdLoadingVertical(LoadingDialogActivity.this,
                                 "加载中...").show();
                     }
                 });

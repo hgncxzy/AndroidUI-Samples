@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 import com.xzy.dialog.R;
 
-public class SelectDialog extends AppCompatActivity {
+public class SelectDialogActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

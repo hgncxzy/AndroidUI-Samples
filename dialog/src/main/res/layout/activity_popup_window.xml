@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="20dp"
-    tools:context=".activity.PopupWindow">
+    tools:context=".activity.PopupWindowActivity">
 <Button
     android:id="@+id/popupwindow_2"
     android:layout_width="match_parent"

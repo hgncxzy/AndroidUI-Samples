@@ -20,7 +20,7 @@ import static com.widget.jcdialog.utils.ToastUitl.showToast;
  * popupWindow 的用法。
  * @author xzy
  */
-public class PopupWindow extends AppCompatActivity {
+public class PopupWindowActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

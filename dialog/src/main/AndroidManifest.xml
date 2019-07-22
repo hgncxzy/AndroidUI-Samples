@@ -11,11 +11,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".activity.TimePicker"/>
-        <activity android:name=".activity.SelectDialog" />
-        <activity android:name=".activity.Dialog" />
-        <activity android:name=".activity.LoadingDialog" />
-        <activity android:name=".activity.PopupWindow" />
+        <activity android:name=".activity.TimePickerActivity"/>
+        <activity android:name=".activity.SelectDialogActivity" />
+        <activity android:name=".activity.DialogActivity" />
+        <activity android:name=".activity.LoadingDialogActivity" />
+        <activity android:name=".activity.PopupWindowActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

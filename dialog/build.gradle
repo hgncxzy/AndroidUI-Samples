@@ -33,6 +33,6 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-    // Dialog 依赖库
+    // DialogActivity 依赖库
     implementation 'com.liujc.util:jcdialog:1.0.1'
 }

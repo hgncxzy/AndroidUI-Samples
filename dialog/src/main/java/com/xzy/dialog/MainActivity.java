@@ -7,12 +7,16 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.widget.jcdialog.DialogUtils;
-import com.xzy.dialog.activity.LoadingDialog;
-import com.xzy.dialog.activity.PopupWindow;
+import com.xzy.dialog.activity.DialogActivity;
+import com.xzy.dialog.activity.LoadingDialogActivity;
+import com.xzy.dialog.activity.PopupWindowActivity;
+import com.xzy.dialog.activity.SelectDialogActivity;
+import com.xzy.dialog.activity.TimePickerActivity;
 
 /**
  * dialog 使用 demo。
- * @author  xzy
+ *
+ * @author xzy
  */
 public class MainActivity extends AppCompatActivity {
 
@@ -23,42 +27,42 @@ public class MainActivity extends AppCompatActivity {
         handle();
     }
 
-    private void handle(){
+    private void handle() {
 
         DialogUtils.init(this);
 
         findViewById(R.id.popupwindow).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, PopupWindow.class));
+                startActivity(new Intent(MainActivity.this, PopupWindowActivity.class));
             }
         });
 
         findViewById(R.id.loadingDialog).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, LoadingDialog.class));
+                startActivity(new Intent(MainActivity.this, LoadingDialogActivity.class));
             }
         });
 
         findViewById(R.id.dialog).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                startActivity(new Intent(MainActivity.this, DialogActivity.class));
             }
         });
 
         findViewById(R.id.selectDialog).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                startActivity(new Intent(MainActivity.this, SelectDialogActivity.class));
             }
         });
 
         findViewById(R.id.timepicker).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                startActivity(new Intent(MainActivity.this, TimePickerActivity.class));
             }
         });
     }
