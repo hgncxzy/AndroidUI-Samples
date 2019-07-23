@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * 依赖库 com.liujc.util:jcdialog:1.0.1
+     * 依赖库地址 https://github.com/liujinchao/DialogUi
      */
     private void handle() {
 

@@ -27,6 +27,10 @@ public class KeyboardActivity extends AppCompatActivity {
         handle();
     }
 
+    /**
+     * 依赖库 com.liujc.util:jcdialog:1.0.1
+     * 依赖库地址 https://github.com/liujinchao/DialogUi
+     */
     private void handle() {
         findViewById(R.id.normalKeyboard).setOnClickListener(new View.OnClickListener() {
             @Override
