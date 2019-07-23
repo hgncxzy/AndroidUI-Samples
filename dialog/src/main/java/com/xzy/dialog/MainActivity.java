@@ -28,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
         handle();
     }
 
+    /**
+     * 依赖库 com.liujc.util:jcdialog:1.0.1
+     */
     private void handle() {
 
         DialogUtils.init(this);
