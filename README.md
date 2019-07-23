@@ -3,11 +3,12 @@
 
 ### 控件
 
-- [Button]()
+- [Button](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/button)
 - [Dialog](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/dialog)
+- [EditText](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/edittext)
 - [Keyboard](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/keyboard)
 - [Toast](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/toast)
-- TextView()
+- [TextView](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/textview)
 
 ### 联系
 
