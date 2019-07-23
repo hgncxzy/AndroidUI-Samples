@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">keyboard</string>
+    <string name="str1">一般键盘</string>
+    <string name="str2">支付键盘</string>
+    <string name="str3">密码键盘</string>
+</resources>
