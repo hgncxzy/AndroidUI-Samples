@@ -7,8 +7,8 @@
 - [Dialog](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/dialog)
 - [EditText](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/edittext)
 - [Keyboard](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/keyboard)
-- [StatusBar]()
-- [SnackBar]()
+- [StatusBar](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/statusbar)
+- [SnackBar](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/snackbar)
 - [Toast](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/toast)
 - [TextView](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/textview)
 
