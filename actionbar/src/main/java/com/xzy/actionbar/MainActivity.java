@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 /**
- * actionbar 的使用。
+ * actionbar 标题栏 的使用。
  *
  * @author xzy
  */
@@ -19,10 +19,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     *高拓展高自定义性ActionBar，完美替代Android系统默认
+     * 高拓展高自定义性ActionBar 标题栏，完美替代Android系统默认
      * 参考库 https://github.com/goweii/ActionBarEx
      */
-    private void handle(){
+    private void handle() {
 
     }
 }

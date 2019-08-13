@@ -3,9 +3,10 @@
 
 ### 控件
 
-- [ActionBar](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/actionbar)
+- [ActionBar-标题栏](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/actionbar)
+- [Banner-轮播图](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/banner)
 - [Button](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/button)
-- [Dialog](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/dialog)
+- [Dialog-各种弹框、loading、PopupWidow](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/dialog)
 - [EditText](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/edittext)
 - [Keyboard](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/keyboard)
 - [Menu](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/menu)
