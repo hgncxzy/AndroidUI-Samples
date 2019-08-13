@@ -1,6 +1,4 @@
-## 第一种  Button 效果库的使用
-
-### 使用库1
+### [使用库1](https://github.com/liujinchao/XSelectorUtil)
 
 #### 库名
 
@@ -26,3 +24,6 @@ com.android.util:xselector:1.0.2
 ####  APIs 与调用方式
 
 参考 https://github.com/liujinchao/XSelectorUtil
+
+### [使用库2](https://github.com/lihangleo2/SmartLoadingView)
+
