@@ -458,7 +458,9 @@ Android稳定高效的浮层创建管理框架
 
 Toast & Snackbar & TopBar & Dialog
 
+## [使用库6](https://github.com/zyao89/ZLoading)
 
+这是一个自定义Loading View库，效果炫酷。
 
 
 

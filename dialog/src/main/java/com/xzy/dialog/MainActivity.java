@@ -117,4 +117,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Loading 封装
+     * 自定义Loading View库. 效果炫酷，但是暂停更新。
+     * 依赖库地址 https://github.com/zyao89/ZLoading
+     */
+    private void handle6() {
+
+    }
+
 }
