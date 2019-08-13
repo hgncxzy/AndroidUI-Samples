@@ -1,5 +1,5 @@
 # Dialog 项目使用说明文档
-## 使用库1 com.liujc.util:jcdialog:1.0.1
+## [使用库1](https://github.com/liujinchao/DialogUi)
 
 ### 使用步骤
 
@@ -442,7 +442,9 @@ final DefaultAddressProvider addressProvider = new
                                 });
 ```
 
-## 使用库2 com.timmy.tdialog:tdialog:2.1.1 
+## [使用库2](https://github.com/Timmy-zzh/TDialog)
 
-https://github.com/Timmy-zzh/TDialog
+## [使用库3](https://github.com/goweii/AnyLayer)
+
+
 
