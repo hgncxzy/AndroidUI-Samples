@@ -1,12 +1,11 @@
-package com.xzy.snackbar;
+package com.xzy.menu;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
 /**
- * SnackBar 的用法。
- *
+ * 菜单 menu 的用法。
  * @author xzy
  */
 @SuppressWarnings("unused")
@@ -19,19 +18,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * 使用 SnackBarUtils
-     * 依赖库 com.google.android.material:material:1.0.0
+     * 一个零耦合的侧滑菜单，支持RecyclerView、ListView、GridView等不同条目布局，
+     * 支持菜单在左或在右，可选滑动阻塞，是否禁用等功能
+     * 参考项目 https://github.com/ljphawk/SwipeMenuLayout
      */
-    private void handle() {
+    private void handle(){
 
     }
-
-    /**
-     * 依赖库 com.github.the-pig-of-jungle.smart-show:all:2.7.8
-     * 依赖库地址 https://github.com/the-pig-of-jungle/smart-show
-     */
-    private void handle2() {
-
-    }
-
 }

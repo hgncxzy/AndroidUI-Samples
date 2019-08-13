@@ -1,11 +1,11 @@
-package com.xzy.snackbar;
+package com.xzy.actionbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
 /**
- * SnackBar 的用法。
+ * actionbar 的使用。
  *
  * @author xzy
  */
@@ -19,19 +19,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * 使用 SnackBarUtils
-     * 依赖库 com.google.android.material:material:1.0.0
+     *高拓展高自定义性ActionBar，完美替代Android系统默认
+     * 参考库 https://github.com/goweii/ActionBarEx
      */
-    private void handle() {
+    private void handle(){
 
     }
-
-    /**
-     * 依赖库 com.github.the-pig-of-jungle.smart-show:all:2.7.8
-     * 依赖库地址 https://github.com/the-pig-of-jungle/smart-show
-     */
-    private void handle2() {
-
-    }
-
 }

@@ -1,4 +1,6 @@
 # Dialog 项目使用说明文档
+## 使用库1 com.liujc.util:jcdialog:1.0.1
+
 ### 使用步骤
 
 #### 1. 引入第三方库
@@ -439,4 +441,8 @@ final DefaultAddressProvider addressProvider = new
                                     }
                                 });
 ```
+
+## 使用库2 com.timmy.tdialog:tdialog:2.1.1 
+
+https://github.com/Timmy-zzh/TDialog
 

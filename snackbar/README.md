@@ -1,4 +1,6 @@
-### 添加依赖
+## 使用库1 com.google.android.material:material:1.0.0
+
+### 添加依赖 
 
 ```groovy
 implementation 'com.google.android.material:material:1.0.0'
@@ -181,4 +183,8 @@ public class SnackBarUtils {
 }
 
 ```
+
+## 使用库2 com.github.the-pig-of-jungle.smart-show:all:2.7.8
+
+https://github.com/the-pig-of-jungle/smart-show
 

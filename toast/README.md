@@ -1,6 +1,4 @@
-## 第一种 Toast 库的使用
-
-### 使用库1
+## 使用库1  com.liujc.util:jcdialog:1.0.1
 
 #### 库名
 
@@ -233,3 +231,6 @@ public static void showToast(CharSequence msg) {
 ToastUitl.showXXX
 ```
 
+## 使用库2 com.github.the-pig-of-jungle.smart-show:all:2.7.8
+
+https://github.com/the-pig-of-jungle/smart-show

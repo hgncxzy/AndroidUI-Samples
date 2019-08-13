@@ -10,7 +10,10 @@ import com.widget.jcdialog.utils.ToastUitl;
 
 /**
  * toast 项目的用法。
+ *
+ * @author xzy
  */
+@SuppressWarnings("unused")
 public class ToastActivity extends AppCompatActivity {
 
     @Override
@@ -50,5 +53,14 @@ public class ToastActivity extends AppCompatActivity {
                 ToastUitl.showToastWithImg("带图片的Toast", R.drawable.ic_success);
             }
         });
+    }
+
+    /**
+     * toast 封装
+     * 依赖库 com.github.the-pig-of-jungle.smart-show:all:2.7.8
+     * 依赖库地址 https://github.com/the-pig-of-jungle/smart-show
+     */
+    private void handle2() {
+
     }
 }

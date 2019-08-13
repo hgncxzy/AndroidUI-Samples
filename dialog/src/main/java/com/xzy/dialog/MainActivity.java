@@ -19,6 +19,7 @@ import com.xzy.dialog.activity.TimePickerActivity;
  *
  * @author xzy
  */
+@SuppressWarnings("unused")
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
+     * 关于toast、等待框、对话框、选择框、地址选择框、软键盘等工具的封装
      * 依赖库 com.liujc.util:jcdialog:1.0.1
      * 依赖库地址 https://github.com/liujinchao/DialogUi
      */
@@ -76,5 +78,24 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, AddressActivity.class));
             }
         });
+    }
+
+
+    /**
+     * DialogFragment 封装,高效实现各种弹窗效果
+     * 依赖库 com.timmy.tdialog:tdialog:2.1.1
+     * 依赖库地址 https://github.com/Timmy-zzh/TDialog
+     */
+    private void handle2() {
+
+    }
+
+    /**
+     * Dialog 封装
+     * 依赖库 com.github.the-pig-of-jungle.smart-show:all:2.7.8
+     * 依赖库地址 https://github.com/the-pig-of-jungle/smart-show
+     */
+    private void handle3() {
+
     }
 }
