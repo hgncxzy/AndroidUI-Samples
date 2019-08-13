@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Dialog 封装
+     * Dialog 封装 Dialog效果、Popup 效果
      * 依赖库  com.github.goweii:AnyLayer:3.0.0
      * 依赖库地址 https://github.com/goweii/AnyLayer
      */
