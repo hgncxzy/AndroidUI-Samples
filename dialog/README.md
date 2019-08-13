@@ -444,7 +444,21 @@ final DefaultAddressProvider addressProvider = new
 
 ## [使用库2](https://github.com/Timmy-zzh/TDialog)
 
+DialogFragment封装,高效实现各种弹窗效果
+
 ## [使用库3](https://github.com/goweii/AnyLayer)
+
+Android稳定高效的浮层创建管理框架
+
+## [使用库4](https://github.com/CodingEnding/PopupLayout)
+
+通用弹出布局辅助库，允许开发者从顶部、底部、左侧、右侧和中心这五个位置弹出自己指定的View。
+
+## [使用库5](https://github.com/the-pig-of-jungle/smart-show)
+
+Toast & Snackbar & TopBar & Dialog
+
+
 
 
 

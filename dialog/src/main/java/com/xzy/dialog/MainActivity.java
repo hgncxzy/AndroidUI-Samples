@@ -108,5 +108,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Dialog 封装 Popup 效果
+     * 通用弹出布局辅助库，允许开发者从顶部、底部、左侧、右侧和中心这五个位置弹出自己指定的View。
+     * 依赖库地址 https://github.com/CodingEnding/PopupLayout
+     */
+    private void handle5() {
+
+    }
 
 }
