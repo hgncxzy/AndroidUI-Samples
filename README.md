@@ -10,6 +10,7 @@
 - [EditText](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/edittext)
 - [Keyboard](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/keyboard)
 - [Menu](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/menu)
+- [NavigationBar](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/navigationbar)
 - [StatusBar](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/statusbar)
 - [SnackBar](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/snackbar)
 - [Toast](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/toast)
