@@ -34,4 +34,12 @@ public class EditTextActivity extends AppCompatActivity {
     private void handle2() {
 
     }
+
+    /**
+     * TextInputLayout+TextInputEditText 打造精美的登录界面
+     *  参考 https://blog.csdn.net/smile_Running/article/details/97260032
+     */
+    private void handle3() {
+
+    }
 }

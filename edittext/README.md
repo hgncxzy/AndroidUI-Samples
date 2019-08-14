@@ -31,3 +31,7 @@ com.android.util:xselector:1.0.2
 
 一款简单、好用的自定义EditText（含一键删除&自定义样式）
 
+## [使用 TextInputLayout+TextInputEditText](https://blog.csdn.net/smile_Running/article/details/97260032)
+
+TextInputLayout+TextInputEditText 打造精美的登录界面.
+
