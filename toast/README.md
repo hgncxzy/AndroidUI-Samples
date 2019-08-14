@@ -233,5 +233,29 @@ ToastUitl.showXXX
 
 ## [使用库2](https://github.com/the-pig-of-jungle/smart-show)
 
+Toast & Snackbar & TopBar & Dialog
+
 ## [使用库3](https://github.com/goweii/AnyLayer)
+
+Android稳定高效的浮层创建管理框架。
+
+- 链式调用
+- 三大效果
+  - Dialog效果（Dialog/Popup/BottomSheet等效果）
+    - 占用区域不会超过当前Activity避免导航栏遮挡
+    - 支持自由控制浮层大小和显示位置
+    - 支持自定义数据绑定
+    - 支持自定义进出场动画
+    - 支持自定义背景颜色/图片/高斯模糊
+    - 支持Popup效果时跟随目标View移动
+    - 支持在Activity的onCreate生命周期弹出
+  - Toast效果（依附Activity非全局）
+    - 支持自定义图标和文字
+    - 支持自定义显示时长
+    - 待完善
+  - Guide效果（引导层）
+
+## [使用库4](https://github.com/getActivity/ToastUtils)
+
+This is a very functional Toast
 

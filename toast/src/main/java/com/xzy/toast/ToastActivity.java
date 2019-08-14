@@ -73,4 +73,12 @@ public class ToastActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Toast 封装 This is a very functional Toast
+     * 依赖库地址 https://github.com/getActivity/ToastUtils
+     */
+    private void handle4() {
+
+    }
+
 }
