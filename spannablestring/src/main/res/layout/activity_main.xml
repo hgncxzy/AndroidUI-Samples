@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
+
+    <Button
+        android:id="@+id/ForegroundColorSpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ForegroundColorSpan"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/BackgroundColorSpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BackgroundColorSpan"
+        android:textAllCaps="false" />
+
+
+    <Button
+        android:id="@+id/RelativeSizeSpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RelativeSizeSpan"
+        android:textAllCaps="false" />
+
+
+    <Button
+        android:id="@+id/StrikethroughSpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="StrikethroughSpan"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/UnderlineSpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UnderlineSpan"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/SuperscriptSpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SuperscriptSpan"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/SubscriptSpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SubscriptSpan"
+        android:textAllCaps="false" />
+
+
+    <TextView
+        android:id="@+id/show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp" />
+
+</LinearLayout>

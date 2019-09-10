@@ -1,1 +1,1 @@
-include ':app', ':dialog', ':toast', ':keyboard', ':textview', ':edittext', ':button', ':snackbar', ':statusbar', ':menu', ':actionbar', ':banner', ':navigationbar'
+include ':app', ':dialog', ':toast', ':keyboard', ':textview', ':edittext', ':button', ':snackbar', ':statusbar', ':menu', ':actionbar', ':banner', ':navigationbar', ':spannablestring'
