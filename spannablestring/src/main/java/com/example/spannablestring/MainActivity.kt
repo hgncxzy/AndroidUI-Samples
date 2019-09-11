@@ -1,6 +1,6 @@
 package com.example.spannablestring
 
-import android.graphics.Color
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Spanned
@@ -8,13 +8,21 @@ import android.graphics.Color.parseColor
 import android.text.style.ForegroundColorSpan
 import android.text.SpannableString
 import kotlinx.android.synthetic.main.activity_main.*
-import android.graphics.Color.parseColor
 import android.text.style.BackgroundColorSpan
 import android.text.style.RelativeSizeSpan
 import android.text.style.StrikethroughSpan
 import android.text.style.UnderlineSpan
 import android.text.style.SuperscriptSpan
 import android.text.style.SubscriptSpan
+import android.graphics.Typeface
+import android.text.style.StyleSpan
+import android.text.style.ImageSpan
+import android.content.Intent
+import android.text.TextPaint
+import android.text.style.ClickableSpan
+import android.text.method.LinkMovementMethod
+import android.view.View
+import android.text.style.URLSpan
 
 
 /**
@@ -22,6 +30,7 @@ import android.text.style.SubscriptSpan
  * 参考 https://www.jianshu.com/p/84067ad289d2
  * @author xzy
  */
+@Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -105,6 +114,66 @@ class MainActivity : AppCompatActivity() {
             show.text = spannableString
         }
 
+        // 为文字设置粗体、斜体风格
+        StyleSpan.setOnClickListener {
+            val spannableString = SpannableString("为文字设置粗体、斜体风格")
+            val styleSpanB = StyleSpan(Typeface.BOLD)
+            val styleSpanI = StyleSpan(Typeface.ITALIC)
+            spannableString.setSpan(styleSpanB, 5, 7, Spanned.SPAN_INCLUSIVE_EXCLUSIVE)
+            spannableString.setSpan(styleSpanI, 8, 10, Spanned.SPAN_INCLUSIVE_EXCLUSIVE)
+            show.highlightColor = parseColor("#36969696")
+            show.text = spannableString
+        }
+
+        // 在文本中添加表情
+        ImageSpan.setOnClickListener {
+            val spannableString = SpannableString("在文本中添加表情（表情）")
+            val drawable = resources.getDrawable(R.mipmap.test)
+            drawable.setBounds(0, 0, 42, 42)
+            val imageSpan = ImageSpan(drawable)
+            spannableString.setSpan(imageSpan, 6, 8, Spanned.SPAN_INCLUSIVE_EXCLUSIVE)
+            show.text = spannableString
+        }
+
+        // 设置可点击的文本
+        ClickableSpan.setOnClickListener {
+            val spannableString = SpannableString("为文字设置点击事件")
+            val clickableSpan = MyClickableSpan(this@MainActivity, "http://www.jianshu.com/users/dbae9ac95c78")
+            spannableString.setSpan(clickableSpan, 5, spannableString.length, Spanned.SPAN_INCLUSIVE_EXCLUSIVE)
+            show.movementMethod = LinkMovementMethod.getInstance()
+            show.highlightColor = parseColor("#36969696")
+            show.text = spannableString
+
+        }
+
+        // 为文字设置超链接
+        URLSpan.setOnClickListener {
+            val spannableString = SpannableString("为文字设置超链接")
+            val urlSpan = URLSpan("http://www.jianshu.com/users/dbae9ac95c78")
+            spannableString.setSpan(urlSpan, 5, spannableString.length, Spanned.SPAN_INCLUSIVE_EXCLUSIVE)
+            show.movementMethod = LinkMovementMethod.getInstance()
+            show.highlightColor = parseColor("#36969696")
+            show.text = spannableString
+        }
+
 
     }
 }
+
+/***************************************************************/
+
+class MyClickableSpan(context: Context, private val content: String) : ClickableSpan() {
+    val ctx: Context = context
+    override fun updateDrawState(ds: TextPaint) {
+        ds.isUnderlineText = false
+    }
+
+    override fun onClick(widget: View) {
+        val intent = Intent(ctx, OtherActivity::class.java)
+        val bundle = Bundle()
+        bundle.putString("content", content)
+        intent.putExtra("bundle", bundle)
+        ctx.startActivity(intent)
+    }
+}
+
