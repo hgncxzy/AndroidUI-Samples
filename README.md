@@ -13,6 +13,7 @@
 - [NavigationBar](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/navigationbar)
 - [StatusBar](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/statusbar)
 - [SnackBar](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/snackbar)
+- [SpannableString](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/spannablestring)
 - [Toast](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/toast)
 - [TextView](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/textview)
 
