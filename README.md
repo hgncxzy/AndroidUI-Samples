@@ -27,11 +27,10 @@
 
 - [MATERIAL DESIGN](https://material.io/)
 
-# AndroidUI -  Bugs Solutions
+# AndroidUI - Solutions
 
-### 控件
-
-- [TextView](https://github.com/hgncxzy/AndroidUI-Samples/blob/master/textview/QuestionsAndSolutions.md)
+- [ListView](https://blog.csdn.net/jdfkldjlkjdl/article/details/82259823)
+- [TextView](https://blog.csdn.net/jdfkldjlkjdl/article/details/49468567)
 - [Y-颜色与透明度计算](https://blog.csdn.net/wangliblog/article/details/73248122)
 
 # Android Learning Websites
