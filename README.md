@@ -31,8 +31,16 @@
 
 ### 控件
 
-- [TextView]()
+- [TextView](https://github.com/hgncxzy/AndroidUI-Samples/blob/master/textview/QuestionsAndSolutions.md)
 - [Y-颜色与透明度计算](https://blog.csdn.net/wangliblog/article/details/73248122)
+
+# Android Learning Websites
+
+- [Android 学习](https://www.jianshu.com/c/053aaffa3a76)
+-  [Android 知识点及效果](https://www.jianshu.com/c/833dd498c20f)
+- [安卓UI](https://www.jianshu.com/c/371ef270e696)
+- [Android Zone](https://www.jianshu.com/c/01979ba6eef6)
+- 
 
 
 
