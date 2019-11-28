@@ -1,95 +1,96 @@
+# GitHub上受欢迎的Android UI Library
+
 ## 内容
 
-- [抽屉菜单](https://github.com/hgncxzy/AndroidUI-Samples#抽屉菜单)
-- [ListView](https://github.com/hgncxzy/AndroidUI-Samples#ListView)
-- [WebView](https://github.com/hgncxzy/AndroidUI-Samples#WebView)
-- [SwitchButton](https://github.com/hgncxzy/AndroidUI-Samples#SwitchButton)
-- [按钮](https://github.com/hgncxzy/AndroidUI-Samples#按钮)
-- [点赞按钮](https://github.com/hgncxzy/AndroidUI-Samples#点赞按钮)
-- [进度条](https://github.com/hgncxzy/AndroidUI-Samples#进度条)
-- [TabLayout](https://github.com/hgncxzy/AndroidUI-Samples#TabLayout)
-- [图标](https://github.com/hgncxzy/AndroidUI-Samples#图标)
-- [下拉刷新](https://github.com/hgncxzy/AndroidUI-Samples#下拉刷新)
-- [ViewPager](https://github.com/hgncxzy/AndroidUI-Samples#ViewPager)
-- [图表(Chart)](https://github.com/hgncxzy/AndroidUI-Samples#图表(Chart))
-- [菜单(Menu)](https://github.com/hgncxzy/AndroidUI-Samples#菜单(Menu))
-- [浮动菜单](https://github.com/hgncxzy/AndroidUI-Samples#浮动菜单)
-- [对话框](https://github.com/hgncxzy/AndroidUI-Samples#对话框)
-- [空白页](https://github.com/hgncxzy/AndroidUI-Samples#空白页)
-- [滑动删除](https://github.com/hgncxzy/AndroidUI-Samples#滑动删除)
-- [手势操作](https://github.com/hgncxzy/AndroidUI-Samples#手势操作)
-- [RecyclerView](https://github.com/hgncxzy/AndroidUI-Samples#RecyclerView)
-- [Card](https://github.com/hgncxzy/AndroidUI-Samples#Card)
-- [Color](https://github.com/hgncxzy/AndroidUI-Samples#Color)
-- [Drawable](https://github.com/hgncxzy/AndroidUI-Samples#Drawable)
-- [Spinner](https://github.com/hgncxzy/AndroidUI-Samples#Spinner)
-- [布局](https://github.com/hgncxzy/AndroidUI-Samples#布局)
-- [模糊效果](https://github.com/hgncxzy/AndroidUI-Samples#模糊效果)
-- [TabBar](https://github.com/hgncxzy/AndroidUI-Samples#TabBar)
-- [AppBar](https://github.com/hgncxzy/AndroidUI-Samples#AppBar)
-- [ActionBar](https://github.com/hgncxzy/AndroidUI-Samples#ActionBar)
-- [选择器(Picker)](https://github.com/hgncxzy/AndroidUI-Samples#选择器(Picker))
-- [跑马灯](https://github.com/hgncxzy/AndroidUI-Samples#跑马灯)
-- [日历时间](https://github.com/hgncxzy/AndroidUI-Samples#日历时间)
-- [主题样式](https://github.com/hgncxzy/AndroidUI-Samples#主题样式)
-- [ImageView](https://github.com/hgncxzy/AndroidUI-Samples#ImageView)
-- [通知](https://github.com/hgncxzy/AndroidUI-Samples#通知)
-- [聊天视图](https://github.com/hgncxzy/AndroidUI-Samples#聊天视图)
-- [Header](https://github.com/hgncxzy/AndroidUI-Samples#Header)
-- [引导图(Intro)](https://github.com/hgncxzy/AndroidUI-Samples#引导图(Intro))
-- [图片](https://github.com/hgncxzy/AndroidUI-Samples#图片)
-- [徽章(Badge)](https://github.com/hgncxzy/AndroidUI-Samples#徽章(Badge))
-- [RatingView](https://github.com/hgncxzy/AndroidUI-Samples#RatingView)
-- [滚动效果(Scroll)](https://github.com/hgncxzy/AndroidUI-Samples#滚动效果(Scroll))
-- [时间轴](https://github.com/hgncxzy/AndroidUI-Samples#时间轴)
-- [TreeView](https://github.com/hgncxzy/AndroidUI-Samples#TreeView)
-- [SearchView](https://github.com/hgncxzy/AndroidUI-Samples#SearchView)
-- [TagView](https://github.com/hgncxzy/AndroidUI-Samples#TagView)
-- [TextView](https://github.com/hgncxzy/AndroidUI-Samples#TextView)
-- [EditText](https://github.com/hgncxzy/AndroidUI-Samples#EditText)
-- [Sliding](https://github.com/hgncxzy/AndroidUI-Samples#Sliding)
-- [表单](https://github.com/hgncxzy/AndroidUI-Samples#表单)
-- [分段控件](https://github.com/hgncxzy/AndroidUI-Samples#分段控件)
-- [轮播图](https://github.com/hgncxzy/AndroidUI-Samples#轮播图)
-- [文件操作](https://github.com/hgncxzy/AndroidUI-Samples#文件操作)
-- [启动页](https://github.com/hgncxzy/AndroidUI-Samples#启动页)
-- [MD](https://github.com/hgncxzy/AndroidUI-Samples#MD)
-- [BottomNavigation](https://github.com/hgncxzy/AndroidUI-Samples#BottomNavigation)
-- [Toast](https://github.com/hgncxzy/AndroidUI-Samples#Toast)
-- [CreditCard](https://github.com/hgncxzy/AndroidUI-Samples#CreditCard)
-- [ActionSheet](https://github.com/hgncxzy/AndroidUI-Samples#ActionSheet)
-- [Wave](https://github.com/hgncxzy/AndroidUI-Samples#Wave)
-- [Snackbar](https://github.com/hgncxzy/AndroidUI-Samples#Snackbar)
-- [用户引导](https://github.com/hgncxzy/AndroidUI-Samples#用户引导)
-- [Popup](https://github.com/hgncxzy/AndroidUI-Samples#Popup)
-- [滑动返回](https://github.com/hgncxzy/AndroidUI-Samples#滑动返回)
-- [TV组件](https://github.com/hgncxzy/AndroidUI-Samples#TV组件)
-- [软键盘](https://github.com/hgncxzy/AndroidUI-Samples#软键盘)
-- [状态栏](https://github.com/hgncxzy/AndroidUI-Samples#状态栏)
-- [StepView](https://github.com/hgncxzy/AndroidUI-Samples#StepView)
-- [表格(Table)](https://github.com/hgncxzy/AndroidUI-Samples#表格(Table))
-- [滚动视差(Parallex)](https://github.com/hgncxzy/AndroidUI-Samples#滚动视差(Parallex))
-- [SideBar](https://github.com/hgncxzy/AndroidUI-Samples#SideBar)
-- [关于页面](https://github.com/hgncxzy/AndroidUI-Samples#关于页面)
-- [详情页](https://github.com/hgncxzy/AndroidUI-Samples#详情页)
-- [FAB](https://github.com/hgncxzy/AndroidUI-Samples#FAB)
-- [Indicator](https://github.com/hgncxzy/AndroidUI-Samples#Indicator)
-- [分享组件](https://github.com/hgncxzy/AndroidUI-Samples#分享组件)
-- [升级更新](https://github.com/hgncxzy/AndroidUI-Samples#升级更新)
-- [Toolbar](https://github.com/hgncxzy/AndroidUI-Samples#Toolbar)
-- [Sort&Drag](https://github.com/hgncxzy/AndroidUI-Samples#Sort&Drag)
-- [Emoji](https://github.com/hgncxzy/AndroidUI-Samples#Emoji)
-- [Label](https://github.com/hgncxzy/AndroidUI-Samples#Label)
-- [WheelView](https://github.com/hgncxzy/AndroidUI-Samples#WheelView)
-- [PinCode](https://github.com/hgncxzy/AndroidUI-Samples#PinCode)
-- [CoordinatorLayout](https://github.com/hgncxzy/AndroidUI-Samples#CoordinatorLayout)
-- [页面切换](https://github.com/hgncxzy/AndroidUI-Samples#页面切换)
-- [悬浮窗](https://github.com/hgncxzy/AndroidUI-Samples#悬浮窗)
-- [地图](https://github.com/hgncxzy/AndroidUI-Samples#地图)
-- [编辑器](https://github.com/hgncxzy/AndroidUI-Samples#编辑器)
-- [SeekBar](https://github.com/hgncxzy/AndroidUI-Samples#SeekBar)
-- [DownloadView](https://github.com/hgncxzy/AndroidUI-Samples#DownloadView)
-- [其他](https://github.com/hgncxzy/AndroidUI-Samples#其他)
+- [抽屉菜单](https://hndeveloper.github.io/2017/github-android-ui.html#抽屉菜单)
+- [ListView](https://hndeveloper.github.io/2017/github-android-ui.html#ListView)
+- [WebView](https://hndeveloper.github.io/2017/github-android-ui.html#WebView)
+- [SwitchButton](https://hndeveloper.github.io/2017/github-android-ui.html#SwitchButton)
+- [按钮](https://hndeveloper.github.io/2017/github-android-ui.html#按钮)
+- [点赞按钮](https://hndeveloper.github.io/2017/github-android-ui.html#点赞按钮)
+- [进度条](https://hndeveloper.github.io/2017/github-android-ui.html#进度条)
+- [TabLayout](https://hndeveloper.github.io/2017/github-android-ui.html#TabLayout)
+- [图标](https://hndeveloper.github.io/2017/github-android-ui.html#图标)
+- [下拉刷新](https://hndeveloper.github.io/2017/github-android-ui.html#下拉刷新)
+- [ViewPager](https://hndeveloper.github.io/2017/github-android-ui.html#ViewPager)
+- [图表(Chart)](https://hndeveloper.github.io/2017/github-android-ui.html#图表(Chart))
+- [菜单(Menu)](https://hndeveloper.github.io/2017/github-android-ui.html#菜单(Menu))
+- [浮动菜单](https://hndeveloper.github.io/2017/github-android-ui.html#浮动菜单)
+- [对话框](https://hndeveloper.github.io/2017/github-android-ui.html#对话框)
+- [空白页](https://hndeveloper.github.io/2017/github-android-ui.html#空白页)
+- [滑动删除](https://hndeveloper.github.io/2017/github-android-ui.html#滑动删除)
+- [手势操作](https://hndeveloper.github.io/2017/github-android-ui.html#手势操作)
+- [RecyclerView](https://hndeveloper.github.io/2017/github-android-ui.html#RecyclerView)
+- [Card](https://hndeveloper.github.io/2017/github-android-ui.html#Card)
+- [Color](https://hndeveloper.github.io/2017/github-android-ui.html#Color)
+- [Drawable](https://hndeveloper.github.io/2017/github-android-ui.html#Drawable)
+- [Spinner](https://hndeveloper.github.io/2017/github-android-ui.html#Spinner)
+- [布局](https://hndeveloper.github.io/2017/github-android-ui.html#布局)
+- [模糊效果](https://hndeveloper.github.io/2017/github-android-ui.html#模糊效果)
+- [TabBar](https://hndeveloper.github.io/2017/github-android-ui.html#TabBar)
+- [AppBar](https://hndeveloper.github.io/2017/github-android-ui.html#AppBar)
+- [选择器(Picker)](https://hndeveloper.github.io/2017/github-android-ui.html#选择器(Picker))
+- [跑马灯](https://hndeveloper.github.io/2017/github-android-ui.html#跑马灯)
+- [日历时间](https://hndeveloper.github.io/2017/github-android-ui.html#日历时间)
+- [主题样式](https://hndeveloper.github.io/2017/github-android-ui.html#主题样式)
+- [ImageView](https://hndeveloper.github.io/2017/github-android-ui.html#ImageView)
+- [通知](https://hndeveloper.github.io/2017/github-android-ui.html#通知)
+- [聊天视图](https://hndeveloper.github.io/2017/github-android-ui.html#聊天视图)
+- [Header](https://hndeveloper.github.io/2017/github-android-ui.html#Header)
+- [引导图(Intro)](https://hndeveloper.github.io/2017/github-android-ui.html#引导图(Intro))
+- [图片](https://hndeveloper.github.io/2017/github-android-ui.html#图片)
+- [徽章(Badge)](https://hndeveloper.github.io/2017/github-android-ui.html#徽章(Badge))
+- [RatingView](https://hndeveloper.github.io/2017/github-android-ui.html#RatingView)
+- [滚动效果(Scroll)](https://hndeveloper.github.io/2017/github-android-ui.html#滚动效果(Scroll))
+- [时间轴](https://hndeveloper.github.io/2017/github-android-ui.html#时间轴)
+- [TreeView](https://hndeveloper.github.io/2017/github-android-ui.html#TreeView)
+- [SearchView](https://hndeveloper.github.io/2017/github-android-ui.html#SearchView)
+- [TagView](https://hndeveloper.github.io/2017/github-android-ui.html#TagView)
+- [TextView](https://hndeveloper.github.io/2017/github-android-ui.html#TextView)
+- [EditText](https://hndeveloper.github.io/2017/github-android-ui.html#EditText)
+- [Sliding](https://hndeveloper.github.io/2017/github-android-ui.html#Sliding)
+- [表单](https://hndeveloper.github.io/2017/github-android-ui.html#表单)
+- [分段控件](https://hndeveloper.github.io/2017/github-android-ui.html#分段控件)
+- [轮播图](https://hndeveloper.github.io/2017/github-android-ui.html#轮播图)
+- [文件操作](https://hndeveloper.github.io/2017/github-android-ui.html#文件操作)
+- [启动页](https://hndeveloper.github.io/2017/github-android-ui.html#启动页)
+- [MD](https://hndeveloper.github.io/2017/github-android-ui.html#MD)
+- [BottomNavigation](https://hndeveloper.github.io/2017/github-android-ui.html#BottomNavigation)
+- [Toast](https://hndeveloper.github.io/2017/github-android-ui.html#Toast)
+- [CreditCard](https://hndeveloper.github.io/2017/github-android-ui.html#CreditCard)
+- [ActionSheet](https://hndeveloper.github.io/2017/github-android-ui.html#ActionSheet)
+- [Wave](https://hndeveloper.github.io/2017/github-android-ui.html#Wave)
+- [Snackbar](https://hndeveloper.github.io/2017/github-android-ui.html#Snackbar)
+- [用户引导](https://hndeveloper.github.io/2017/github-android-ui.html#用户引导)
+- [Popup](https://hndeveloper.github.io/2017/github-android-ui.html#Popup)
+- [滑动返回](https://hndeveloper.github.io/2017/github-android-ui.html#滑动返回)
+- [TV组件](https://hndeveloper.github.io/2017/github-android-ui.html#TV组件)
+- [软键盘](https://hndeveloper.github.io/2017/github-android-ui.html#软键盘)
+- [状态栏](https://hndeveloper.github.io/2017/github-android-ui.html#状态栏)
+- [StepView](https://hndeveloper.github.io/2017/github-android-ui.html#StepView)
+- [表格(Table)](https://hndeveloper.github.io/2017/github-android-ui.html#表格(Table))
+- [滚动视差(Parallex)](https://hndeveloper.github.io/2017/github-android-ui.html#滚动视差(Parallex))
+- [SideBar](https://hndeveloper.github.io/2017/github-android-ui.html#SideBar)
+- [关于页面](https://hndeveloper.github.io/2017/github-android-ui.html#关于页面)
+- [详情页](https://hndeveloper.github.io/2017/github-android-ui.html#详情页)
+- [FAB](https://hndeveloper.github.io/2017/github-android-ui.html#FAB)
+- [Indicator](https://hndeveloper.github.io/2017/github-android-ui.html#Indicator)
+- [分享组件](https://hndeveloper.github.io/2017/github-android-ui.html#分享组件)
+- [升级更新](https://hndeveloper.github.io/2017/github-android-ui.html#升级更新)
+- [Toolbar](https://hndeveloper.github.io/2017/github-android-ui.html#Toolbar)
+- [Sort&Drag](https://hndeveloper.github.io/2017/github-android-ui.html#Sort&Drag)
+- [Emoji](https://hndeveloper.github.io/2017/github-android-ui.html#Emoji)
+- [Label](https://hndeveloper.github.io/2017/github-android-ui.html#Label)
+- [WheelView](https://hndeveloper.github.io/2017/github-android-ui.html#WheelView)
+- [PinCode](https://hndeveloper.github.io/2017/github-android-ui.html#PinCode)
+- [CoordinatorLayout](https://hndeveloper.github.io/2017/github-android-ui.html#CoordinatorLayout)
+- [页面切换](https://hndeveloper.github.io/2017/github-android-ui.html#页面切换)
+- [悬浮窗](https://hndeveloper.github.io/2017/github-android-ui.html#悬浮窗)
+- [地图](https://hndeveloper.github.io/2017/github-android-ui.html#地图)
+- [编辑器](https://hndeveloper.github.io/2017/github-android-ui.html#编辑器)
+- [SeekBar](https://hndeveloper.github.io/2017/github-android-ui.html#SeekBar)
+- [DownloadView](https://hndeveloper.github.io/2017/github-android-ui.html#DownloadView)
+- [其他](https://hndeveloper.github.io/2017/github-android-ui.html#其他)
 
 ## 抽屉菜单
 
@@ -165,7 +166,6 @@
 - [TriStateToggleButton](https://github.com/BeppiMenozzi/TriStateToggleButton) ★132 - 完全可自定义3态切换按钮
 - [SegmentedButton](https://github.com/ceryle/SegmentedButton) ★85 - 类似IOS的带动画分割按钮
 - [DxLoadingButton](https://github.com/StevenDXC/DxLoadingButton) ★77 - 带有动画的Android加载按钮
-- [SmartLoadingView](https://github.com/lihangleo2/SmartLoadingView) ★67 - 一个自带dialog联网请求的button。
 - [SuspendButtonLayout](https://github.com/laocaixw/SuspendButtonLayout) ★67 - 带浮动按钮的布局
 - [floating-text-button](https://github.com/dimorinny/floating-text-button) ★44 - 带动作文本的简单浮动按钮
 - [PentagonFloatingActionButton](https://github.com/developer-shivam/PentagonFloatingActionButton) ★41 - 浮动点击动画按钮
@@ -173,7 +173,6 @@
 - [Hamburger-Button](https://github.com/LongDinhF/Hamburger-Button) ★31 - 完全定制的汉堡按钮
 - [BadgeRadioButton](https://github.com/hcs-xph/BadgeRadioButton) ★25 - 仿QQ底部Tab切换RadioButton
 - [OrderButton](https://github.com/LinXiaoTao/OrderButton) ★21 - 仿饿了么下单按钮
-- [XButton](https://github.com/hgncxzy/XButton) ★0 - 自定义的各种按钮样式
 
 ## 点赞按钮
 
@@ -415,7 +414,6 @@
 - [SwipeAwayDialog](https://github.com/kakajika/SwipeAwayDialog) ★690 - 实现滑动取消对话框
 - [LovelyDialog](https://github.com/yarolegovich/LovelyDialog) ★620 - 帮助你轻松的创建流行的MD风格对话框
 - [EasyDialog](https://github.com/michaelye/EasyDialog) ★532 - Android轻量级提示对话框
-- [TDialog](https://github.com/Timmy-zzh/TDialog) ★401 - DialogFragment 封装,高效实现各种弹窗效果
 - [DialogUtil](https://github.com/hss01248/DialogUtil) ★315 - 任意界面弹出框
 - [fancyDialog](https://github.com/geniusforapp/fancyDialog) ★298 - Android自定义提示框
 - [NormalSelectDialog](https://github.com/weavey/NormalSelectDialog) ★234 - 常见布局封装
@@ -426,11 +424,8 @@
 - [LemonHello4Android](https://github.com/1em0nsOft/LemonHello4Android) ★73 - 内置多种主题提示框
 - [panter-dialog](https://github.com/kngfrhzs/panter-dialog) ★68 - 丰富样式的Android对话框
 - [flickabledialog](https://github.com/t-kurimura/flickabledialog) ★48 - 通过轻滑实现取消效果
-- [DialogUI](https://github.com/liujinchao/DialogUi)  ★38 - 关于toast、等待框、对话框、选择框、地址选择框、软键盘等工具的封装
 - [WheelDialogFragment](https://github.com/GitPhoenix/WheelDialogFragment) ★15 - 用于时间选择城市选择的对话框
 - [BottomSheetPopupDialog](https://github.com/loonggg/BottomSheetPopupDialog) ★5 - 底部弹出框
-- [XDialog](https://github.com/hgncxzy/XDialog) ★0 - 自己实现的对话框
-- 
 
 ## 空白页
 
@@ -650,10 +645,6 @@
 - [appbarlayout-spring-behavior](https://github.com/ToDou/appbarlayout-spring-behavior) ★733 - 实现滚动弹簧效果
 - [TestAppBar](https://github.com/SpikeKing/TestAppBar) ★271 - AppBar动画效果
 - [simple-view-behavior](https://github.com/zoonooz/simple-view-behavior) ★239 - 简单视图行为
-
-## ActionBar
-
-- [ActionBarEx](https://github.com/goweii/ActionBarEx) ★132 - 高拓展高自定义性ActionBar，完美替代Android系统默认
 
 ## 选择器(Picker)
 
@@ -1105,7 +1096,6 @@
 - [bannerview](https://github.com/czy1121/bannerview) ★165 - 横幅广告图片轮播控件
 - [RecyclerViewBanner](https://github.com/loonggg/RecyclerViewBanner) ★155 - 使用RecyclerView做的轮播图
 - [AndroidCarrouselLayout](https://github.com/dalong982242260/AndroidCarrouselLayout) ★105 - 安卓轮播框布局
-- [YCBanner](https://github.com/yangchong211/YCBanner) ★85 - 支持多种自定义属性，可以设置轮播红点或者轮播数字，支持设置引导页。
 - [Banner-Slider](https://github.com/saeedsh92/Banner-Slider) ★61 - 在Android应用中便于使用的精致滑块
 - [MaterialBanner](https://github.com/rtugeek/MaterialBanner) ★56 - MD风格的banner
 - [Flare](https://github.com/IntruderShanky/Flare) ★56 - 简单的循环指示器实现
@@ -1545,4 +1535,3 @@
 - [HoverView](https://github.com/fashare2015/HoverView) ★19 - 仿知乎的底部抽屉
 - [VerificationCodeView](https://github.com/yongming9011/VerificationCodeView) ★16 - Android简单的验证码控件
 - [LetterView](https://github.com/dengzq/LetterView) ★11 - 选中字母完成单词
-
