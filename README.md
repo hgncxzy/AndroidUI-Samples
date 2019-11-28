@@ -12,13 +12,17 @@
 - [Layer-list Android 图层](https://www.jianshu.com/p/9e6d03ab7ac9)
 - [Menu](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/menu)
 - [NavigationBar](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/navigationbar)
-- [PhotoPicker](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/photopicker)
+- [PhotoPicker](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/photopicker) -- 图片选择器
+- [SlideMenuLayout](https://github.com/JingYeoh/SlideMenuLayout) -- 侧滑菜单
 - [StatusBar](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/statusbar)
 - [SnackBar](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/snackbar)
 - [SpannableString](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/spannablestring)
-- [TabLayout](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/tablayout)
-- [Toast](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/toast)
+- [TabLayout](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/tablayout) -- 指示器
+- [Toast](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/toast) 
 - [TextView](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/textview)
+- [XButton](https://github.com/hgncxzy/XButton) -- 自定义按钮样式
+- [XDialog](https://github.com/hgncxzy/XDialog) -- 自定义对话框
+- [XToast](https://github.com/hgncxzy/XToast) -- 自定义 Toast
 
 ### 整套高效 UI 方案
 
