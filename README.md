@@ -12,9 +12,11 @@
 - [Layer-list Android 图层](https://www.jianshu.com/p/9e6d03ab7ac9)
 - [Menu](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/menu)
 - [NavigationBar](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/navigationbar)
+- [PhotoPicker](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/photopicker)
 - [StatusBar](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/statusbar)
 - [SnackBar](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/snackbar)
 - [SpannableString](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/spannablestring)
+- [TabLayout](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/tablayout)
 - [Toast](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/toast)
 - [TextView](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/textview)
 
