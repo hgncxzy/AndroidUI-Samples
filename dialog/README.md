@@ -1,7 +1,7 @@
 # Dialog 项目使用说明文档
 ## [DialogUi](https://github.com/liujinchao/DialogUi)
 
-关于toast、等待框、对话框、选择框、地址选择框、软键盘等工具的封装. [使用步骤]()
+关于toast、等待框、对话框、选择框、地址选择框、软键盘等工具的封装. [使用步骤](https://github.com/hgncxzy/AndroidUI-Samples/blob/master/dialog/docs/使用说明.md)
 
 ## [TDialog](https://github.com/Timmy-zzh/TDialog)
 
