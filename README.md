@@ -18,8 +18,8 @@
 - [SnackBar](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/snackbar) -- 是Android支持库中用于显示简单消息并且提供和用户的一个简单操作的一种弹出式提醒。
 - [SpannableString](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/spannablestring) -- 为字符串指定下标区间内的子字符串设置格式。
 - [TabLayout](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/tablayout) -- 指示器
-- [Toast](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/toast) 
-- [TextView](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/textview)
+- [Toast](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/toast) -- 吐司
+- [TextView](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/textview) -- 文本
 
 ### 整套高效 UI 方案
 
