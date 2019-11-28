@@ -1,31 +1,6 @@
-### [使用库1](https://github.com/liujinchao/XSelectorUtil)
+### [AdvancedTextView](https://github.com/devilist/AdvancedTextView)
 
-#### 库名
-
-```groovy
-com.android.util:xselector:1.0.2
-```
-
-#### 使用方式
-
-1. 添加依赖
-
-   ```groovy
-   implementation 'com.android.util:xselector:1.0.2'
-   ```
-
-2. 实例化 XSelector
-
-   ```java
-   XSelector.init(this);
-   ```
-
-
-####  APIs 与调用方式
-
-参考 https://github.com/liujinchao/XSelectorUtil
-
-### [使用库2](https://github.com/devilist/AdvancedTextView)
+一个增强的 TextView 库。可以实现文字两端对齐，文字竖排，以及自定义选择文字后的弹出菜单。
 
 
 

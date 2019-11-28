@@ -1,247 +1,20 @@
-## [使用库1](https://github.com/liujinchao/DialogUi)
+## [XToast](https://github.com/hgncxzy/XToast)
 
-#### 库名
+自己写的 Toast。
 
-com.liujc.util:jcdialog:1.0.1
+Android Toast 的各种实现，包括默认、自定义位置与背景色、带图片、自定义纯文本、动画等样式的封装。
 
-#### 使用方式
-
-1. 添加依赖
-
-   ```groovy
-   implementation 'com.liujc.util:jcdialog:1.0.1'
-   ```
-
-2. 实例化 DialogUtils
-
-   ```java
-   DialogUtils.init(this);
-   ```
-
-
-####  APIs
-
-可以显示顶部、底部、中部、带图片、自定义位置和布局的 Toast。
-
-```java
-public static void showToast(CharSequence msg) {
-        showToastLong(msg.toString());
-    }
-    /**
-     * 短时间中下位置显示。线程安全，可以在非UI线程调用。
-     */
-    public static void showToast(final int resId) {
-        showToast(ToolUtils.getString(DialogUtils.appContext, resId));
-    }
-
-    /**
-     * 短时间中下位置显示。
-     */
-    public static void showToast(final String str) {
-        showToast(str, Toast.LENGTH_SHORT, Gravity.BOTTOM);
-    }
-
-    /**
-     * 长时间中下位置显示。
-     */
-    public static void showToastLong(final int resId) {
-        showToastLong(ToolUtils.getString(DialogUtils.appContext, resId));
-    }
-
-    /**
-     * 长时间中下位置显示。
-     */
-    public static void showToastLong(final String str) {
-        showToast(str, Toast.LENGTH_LONG, Gravity.BOTTOM);
-    }
-
-
-    /**
-     * 短时间居中位置显示。
-     */
-    public static void showToastCenter(final int resId) {
-        showToastCenter(ToolUtils.getString(DialogUtils.appContext, resId));
-    }
-
-    /**
-     * 短时间居中位置显示。
-     */
-    public static void showToastCenter(final String str) {
-        showToast(str, Toast.LENGTH_SHORT, Gravity.CENTER);
-    }
-
-    /**
-     * 长时间居中位置显示。
-     */
-    public static void showToastCenterLong(final int resId) {
-        showToastCenterLong(ToolUtils.getString(DialogUtils.appContext, resId));
-    }
-
-    /**
-     * 长时间居中位置显示。
-     */
-    public static void showToastCenterLong(final String str) {
-        showToast(str, Toast.LENGTH_LONG, Gravity.CENTER);
-    }
-
-    /**
-     * 短时间居中位置显示。
-     */
-    public static void showToastTop(final int resId) {
-        showToastTop(ToolUtils.getString(DialogUtils.appContext, resId));
-    }
-
-    /**
-     * 短时间居中位置显示。
-     */
-    public static void showToastTop(final String str) {
-        showToast(str, Toast.LENGTH_SHORT, Gravity.TOP);
-    }
-
-    /**
-     * 长时间居中位置显示。
-     */
-    public static void showToastTopLong(final int resId) {
-        showToastTopLong(ToolUtils.getString(DialogUtils.appContext, resId));
-    }
-
-    /**
-     * 长时间居中位置显示。
-     */
-    public static void showToastTopLong(final String str) {
-        showToast(str, Toast.LENGTH_LONG, Gravity.TOP);
-    }
-
-    /**
-     * 自定义显示Toast时间
-     *
-     * @param message
-     * @param duration
-     */
-    public static void show(String message, int duration) {
-        showToast(message, duration,Gravity.BOTTOM);
-    }
-
-    /**
-     * 自定义显示Toast时间
-     *
-     * @param strResId
-     * @param duration
-     */
-    public static void show(int strResId, int duration) {
-        showToast(ToolUtils.getString(DialogUtils.appContext, strResId), duration,Gravity.BOTTOM);
-    }
-
-    /**
-     * 显示有image的toast
-     *
-     * @param tvStr
-     * @param imageResource
-     */
-    public static void showToastWithImg(final String tvStr, final int imageResource) {
-        if (toast2 == null) {
-            toast2 = new Toast(DialogUtils.appContext);
-        }
-        View view = LayoutInflater.from(DialogUtils.appContext).inflate(R.layout.toast_custom, null);
-        TextView tv = (TextView) view.findViewById(R.id.toast_custom_tv);
-        tv.setText(TextUtils.isEmpty(tvStr) ? "" : tvStr);
-        ImageView iv = (ImageView) view.findViewById(R.id.toast_custom_iv);
-        if (imageResource > 0) {
-            iv.setVisibility(View.VISIBLE);
-            iv.setImageResource(imageResource);
-        } else {
-            iv.setVisibility(View.GONE);
-        }
-        toast2.setView(view);
-        toast2.setGravity(Gravity.CENTER, 0, 0);
-        mToast = toast2;
-        mToast.show();
-    }
-
-    public static void showToastLayout(final int toastLayout){
-        showToastLayout(toastLayout,Gravity.CENTER);
-    }
-    /**
-     * @param toastLayout  自定义布局
-     * @param gravity   显示位置
-     */
-    public static void showToastLayout(final int toastLayout, int gravity) {
-        if (toast2 == null) {
-            toast2 = new Toast(DialogUtils.appContext);
-        }
-        View view = LayoutInflater.from(DialogUtils.appContext).inflate(toastLayout, null);
-        toast2.setView(view);
-        toast2.setGravity(gravity, 0, 0);
-        mToast = toast2;
-        mToast.show();
-    }
-
-    /**
-     * 对toast的简易封装。线程不安全，不可以在非UI线程调用。
-     */
-    private static void showToast(String str, int showTime, int gravity) {
-        if (DialogUtils.appContext == null) {
-            throw new RuntimeException("DialogUIUtils not initialized!");
-        }
-        int layoutId = R.layout.dialogui_toast;
-        if (gravity == Gravity.TOP) {
-            if (mToastTop == null) {
-                mToastTop = Toast.makeText(DialogUtils.appContext, str, showTime);
-                LayoutInflater inflate = (LayoutInflater)
-                        DialogUtils.appContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                View view = inflate.inflate(layoutId, null);
-                mToastTop.setView(view);
-                mToastTop.setGravity(gravity, 0, DialogUtils.appContext.getResources().getDimensionPixelSize(R.dimen.dialogui_toast_margin));
-            }
-            mToast = mToastTop;
-            mToast.setText(str);
-            mToast.show();
-        } else if (gravity == Gravity.CENTER) {
-            if (mToastCenter == null) {
-                mToastCenter = Toast.makeText(DialogUtils.appContext, str, showTime);
-                LayoutInflater inflate = (LayoutInflater)
-                        DialogUtils.appContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                View view = inflate.inflate(layoutId, null);
-                mToastCenter.setView(view);
-                mToastCenter.setGravity(gravity, 0, 0);
-            }
-            mToast = mToastCenter;
-            mToast.setText(str);
-            mToast.show();
-        } else if (gravity == Gravity.BOTTOM) {
-            if (mToastBottom == null) {
-                mToastBottom = Toast.makeText(DialogUtils.appContext, str, showTime);
-                LayoutInflater inflate = (LayoutInflater)
-                        DialogUtils.appContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                View view = inflate.inflate(layoutId, null);
-                mToastBottom.setView(view);
-                mToastBottom.setGravity(gravity, 0, DialogUtils.appContext.getResources().getDimensionPixelSize(R.dimen.dialogui_toast_margin));
-            }
-            mToast = mToastBottom;
-            mToast.setText(str);
-            mToast.show();
-        }
-
-    }
-```
-
-#### 调用方式
-
-```java
-ToastUitl.showXXX
-```
-
-## [使用库2](https://github.com/the-pig-of-jungle/smart-show)
+## [smart-show](https://github.com/the-pig-of-jungle/smart-show)
 
 Toast & Snackbar & TopBar & Dialog
 
-## [使用库3](https://github.com/goweii/AnyLayer)
+## [AnyLayer](https://github.com/goweii/AnyLayer)
 
 Android稳定高效的浮层创建管理框架。
 
 - 链式调用
 - 三大效果
-  - Dialog效果（Dialog/Popup/BottomSheet等效果）
+  - Dialog 效果（Dialog/Popup/BottomSheet 等效果）
     - 占用区域不会超过当前Activity避免导航栏遮挡
     - 支持自由控制浮层大小和显示位置
     - 支持自定义数据绑定
@@ -255,7 +28,31 @@ Android稳定高效的浮层创建管理框架。
     - 待完善
   - Guide效果（引导层）
 
-## [使用库4](https://github.com/getActivity/ToastUtils)
+## [ToastUtils](https://github.com/getActivity/ToastUtils)
 
-This is a very functional Toast
+#### 框架亮点
+
+- 无需权限：不管有没有授予通知栏权限都不影响吐司的弹出
+
+- 功能强大：不分主次线程都可以弹出Toast，自动区分资源id和int类型
+
+- 使用简单：只需传入文本，会自动根据文本长度决定吐司显示的时长
+
+- 性能最佳：单例吐司，整个Toast只有一个TextView，并且通过代码创建
+
+- 体验最优：限制Toast短时间内弹出的次数，避免频繁弹出造成不良的用户体验
+
+- 支持多种样式：默认为黑色样式，夜间模式可使用白色样式，还有仿QQ吐司样式
+
+- 支持自定义样式：吐司（背景、圆角、重心、偏移），文字（大小、颜色、边距）
+
+- 支持自定义扩展：支持获取ToastUtils中的Toast对象，支持重新自定义Toast布局
+
+- 支持全局配置样式：可以在Application中初始化Toast样式，达到一劳永逸的效果
+
+- 框架兼容性良好：本框架不依赖任何第三方库，支持Eclipse和Studio的集成使用
+
+  
+
+
 

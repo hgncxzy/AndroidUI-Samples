@@ -5,24 +5,21 @@
 
 - [ActionBar-标题栏](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/actionbar)
 - [Banner-轮播图](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/banner)
-- [Button](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/button)
-- [Dialog-各种弹框、loading、PopupWidow](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/dialog)
-- [EditText](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/edittext)
-- [Keyboard](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/keyboard)
+- [Button](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/button) -- 按钮
+- [Dialog](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/dialog) -- 各种弹框、loadingView、PopupWidow、日历选择器、地址选择器
+- [EditText](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/edittext) -- 编辑框
+- [Keyboard](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/keyboard) -- 键盘
 - [Layer-list Android 图层](https://www.jianshu.com/p/9e6d03ab7ac9)
-- [Menu](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/menu)
-- [NavigationBar](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/navigationbar)
+- [Menu](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/menu) -- 菜单
+- [NavigationBar](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/navigationbar) -- 底部导航栏
 - [PhotoPicker](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/photopicker) -- 图片选择器
-- [SlideMenuLayout](https://github.com/JingYeoh/SlideMenuLayout) -- 侧滑菜单
-- [StatusBar](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/statusbar)
-- [SnackBar](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/snackbar)
-- [SpannableString](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/spannablestring)
+- [SlideMenuLayout](https://github.com/JingYeoh/SlideMenuLayout) -- 侧滑导航菜单
+- [StatusBar](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/statusbar) -- 状态栏
+- [SnackBar](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/snackbar) -- 是Android支持库中用于显示简单消息并且提供和用户的一个简单操作的一种弹出式提醒。
+- [SpannableString](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/spannablestring) -- 为字符串指定下标区间内的子字符串设置格式。
 - [TabLayout](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/tablayout) -- 指示器
 - [Toast](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/toast) 
 - [TextView](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/textview)
-- [XButton](https://github.com/hgncxzy/XButton) -- 自定义按钮样式
-- [XDialog](https://github.com/hgncxzy/XDialog) -- 自定义对话框
-- [XToast](https://github.com/hgncxzy/XToast) -- 自定义 Toast
 
 ### 整套高效 UI 方案
 

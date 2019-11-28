@@ -1,4 +1,10 @@
 # Dialog 项目使用说明文档
+## [XDialog](https://github.com/hgncxzy/XDialog)
+
+自己写的对话框。
+
+Android 常用 Dialog 的实现，包括确定取消对话框、加载进度对话框、顶部滑出自定义对话框、其他自定义对话框等。
+
 ## [DialogUi](https://github.com/liujinchao/DialogUi)
 
 关于toast、等待框、对话框、选择框、地址选择框、软键盘等工具的封装. [使用步骤](https://github.com/hgncxzy/AndroidUI-Samples/blob/master/dialog/docs/使用说明.md)
@@ -30,6 +36,10 @@ This is a picker view for android , support linkage effect, timepicker and optio
 ## [OptionFrame](https://github.com/q805699513/OptionFrame)
 
 一款 Android 弹出框、对话框、Dialog、popuwindow。
+
+
+
+
 
 
 
