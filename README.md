@@ -21,6 +21,92 @@
 - [Toast](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/toast) -- 吐司
 - [TextView](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/textview) -- 文本
 
+### 其他
+
+##### 峰值图
+
+1. [TaperChart](https://github.com/faith-hb/WidgetCase/blob/master/hawkeye_widget/src/main/java/com/doyou/cv/widget/taperchart/TaperChart.java)
+2. [TaperChartLayout](https://github.com/faith-hb/WidgetCase/blob/master/hawkeye_widget/src/main/java/com/doyou/cv/widget/taperchart/TaperChartLayout.java)
+3. [HorTaperChart](https://github.com/faith-hb/WidgetCase/blob/master/hawkeye_widget/src/main/java/com/doyou/cv/widget/taperchart/HorTaperChart.java)
+
+##### 波浪加载控件
+
+[CircleWaveView](https://github.com/faith-hb/WidgetCase/blob/master/hawkeye_widget/src/main/java/com/doyou/cv/widget/wave/CircleWaveView.java)
+
+##### 仿网易一元夺宝下拉刷新控件
+
+[RefreshView](https://github.com/faith-hb/WidgetCase/blob/master/hawkeye_widget/src/main/java/com/doyou/cv/widget/touch/RefreshView.java)
+
+##### 圆形进度条
+
+1. [CircleProgress](https://github.com/faith-hb/WidgetCase/blob/master/hawkeye_widget/src/main/java/com/doyou/cv/widget/progress/circle/CircleProgress.java)
+2. [GradientProBar](https://github.com/faith-hb/WidgetCase/blob/master/hawkeye_widget/src/main/java/com/doyou/cv/widget/progress/circle/GradientProBar.java)
+3. [CircleProgressBarView](https://github.com/faith-hb/WidgetCase/blob/master/hawkeye_widget/src/main/java/com/doyou/cv/widget/progress/circle/CircleProgressBarView.java)
+4. [CircleView](https://github.com/faith-hb/WidgetCase/blob/master/hawkeye_widget/src/main/java/com/doyou/cv/widget/progress/circle/CircleView.java)
+
+##### 环形进度条
+
+1. [RingView](https://github.com/faith-hb/WidgetCase/blob/master/hawkeye_widget/src/main/java/com/doyou/cv/widget/progress/ring/RingView.java)
+2. [LegendRingView(内含图例)](https://github.com/faith-hb/WidgetCase/blob/master/hawkeye_widget/src/main/java/com/doyou/cv/widget/progress/ring/LegendRingView.java)
+
+##### 半圆/油表
+
+1. [HalfCircleProView](https://github.com/faith-hb/WidgetCase/blob/master/hawkeye_widget/src/main/java/com/doyou/cv/widget/HalfCircleProView.java)
+
+##### 横向进度条
+
+1. [HorProBar](https://github.com/faith-hb/WidgetCase/blob/master/hawkeye_widget/src/main/java/com/doyou/cv/widget/progress/horbar/HorProBar.java)
+2. [SectionProBar](https://github.com/faith-hb/WidgetCase/blob/master/hawkeye_widget/src/main/java/com/doyou/cv/widget/progress/horbar/SectionProBar.java)
+3. [ShadowProBar](https://github.com/faith-hb/WidgetCase/blob/master/hawkeye_widget/src/main/java/com/doyou/cv/widget/horbar/progress/ShadowProBar.java)
+4. [LoadingLineView](https://github.com/faith-hb/WidgetCase/blob/master/hawkeye_widget/src/main/java/com/doyou/cv/widget/horbar/progress/LoadingLineView.java)
+
+##### 渐变曲线
+
+[GradientLine](https://github.com/faith-hb/WidgetCase/blob/master/hawkeye_widget/src/main/java/com/doyou/cv/widget/GradientLine.java)
+
+##### 图文混排
+
+[ImgTxtMixtureView](https://github.com/faith-hb/WidgetCase/blob/master/hawkeye_widget/src/main/java/com/doyou/cv/widget/view/ImgTxtMixtureView.java)
+
+##### 防微信图片查看器，双击放大/缩小
+
+[MatrixView](https://github.com/faith-hb/WidgetCase/blob/master/hawkeye_widget/src/main/java/com/doyou/cv/widget/touch/MatrixView.java)
+
+##### 系统控件重写
+
+1. [FixGridView](https://github.com/faith-hb/WidgetCase/blob/master/hawkeye_widget/src/main/java/com/doyou/cv/widget/sys/FixGridView.java)
+2. [FixListView](https://github.com/faith-hb/WidgetCase/blob/master/hawkeye_widget/src/main/java/com/doyou/cv/widget/sys/FixListView.java)
+3. [NoScrollViewPager](https://github.com/faith-hb/WidgetCase/blob/master/hawkeye_widget/src/main/java/com/doyou/cv/widget/sys/NoScrollViewPager.java)
+
+##### 贝塞尔曲线练练手
+
+[PathMorphBezier](https://github.com/faith-hb/WidgetCase/blob/master/hawkeye_widget/src/main/java/com/doyou/cv/widget/PathMorphBezier.java)
+
+##### 图片滤镜
+
+1. [ColorMatrix](https://github.com/faith-hb/WidgetCase/blob/master/app/src/main/java/com/doyou/cvc/release/colorfilter/ColorMatrixActivity.kt)
+2. [ColorHue](https://github.com/faith-hb/WidgetCase/blob/master/app/src/main/java/com/doyou/cvc/release/colorfilter/ColorHueActivity.kt)
+
+##### 时间刻度尺（支持缩放）
+
+[TimeRulerView](https://github.com/faith-hb/WidgetCase/blob/master/hawkeye_widget/src/main/java/com/doyou/cv/widget/timeruler/TimeRulerView.java)
+
+##### 圆形按钮（跟随设备一起旋转，实时监控旋转方向）
+
+[CircleButton](https://github.com/faith-hb/WidgetCase/blob/master/hawkeye_widget/src/main/java/com/doyou/cv/widget/view/CircleButton.java)
+
+##### 自定义滑动控件（支持多指，支持惯性滑动，支持自定义滚动条）
+
+[CustomScrollView](https://github.com/faith-hb/WidgetCase/blob/master/hawkeye_widget/src/main/java/com/doyou/cv/widget/touch/CustomScrollView.java)
+
+##### ScaleAlphaTransformer（自定义ViewPager的滑动动画）
+
+[ScaleAlphaTransformer](https://github.com/faith-hb/WidgetCase/blob/master/hawkeye_widget/src/main/java/com/doyou/cv/widget/sys/viewpager/transformer/ScaleAlphaTransformer.java)
+
+##### 图片翻转动画
+
+[BmpOverturnView](https://github.com/faith-hb/WidgetCase/blob/master/hawkeye_widget/src/main/java/com/doyou/cv/widget/animator/BmpOverturnView.java)
+
 ### 整套高效 UI 方案
 
 - [QMUI](https://qmuiteam.com/android/documents/)
