@@ -17,3 +17,6 @@
 - 1.9 GalleryRecyclerView轮播图支持设置轮播间隔时间，设置滑动速度，设置缩放比例因子
 - 如何引用：直接在项目build文件中添加库即可：compile 'cn.yc:YCBannerLib:1.3.9'
 
+### [MagicViewPager](https://github.com/hongyangAndroid/MagicViewPager)
+
+单页显示3个Item的ViewPager炫酷切换效果，适用于Banner等。

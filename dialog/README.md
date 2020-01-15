@@ -37,6 +37,20 @@ This is a picker view for android , support linkage effect, timepicker and optio
 
 一款 Android 弹出框、对话框、Dialog、popuwindow。
 
+## [**Loading**](https://github.com/PangHaHa12138/Loading)
+
+a Android Loading project 各种漂亮的安卓进度条，加载指示器.
+
+## [YCDialog](https://github.com/yangchong211/YCDialog)
+
+自定义弹窗，其中包括：自定义Toast，采用builder模式，支持设置吐司多个属性；自定义dialog控件，仿IOS底部弹窗；自定义DialogFragment弹窗，支持自定义布局，也支持填充recyclerView布局；自定义PopupWindow弹窗，轻量级，还有自定义Snackbar等等；还有自定义loading加载窗，简单便用。目前已经用于多个正式项目中。同时还有附加7篇关于弹窗的源码分析博客.
+
+## [BottomDialog](https://github.com/shaohui10086/BottomDialog)
+
+BottomDialog is a bottom dialog layout implemented with DialogFragment, Supports pop-up animation, Support any layout
+
+
+
 
 
 

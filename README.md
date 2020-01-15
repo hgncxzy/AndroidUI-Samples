@@ -5,21 +5,31 @@
 ### 单一控件开源库
 
 - [ActionBar](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/actionbar)  - 标题栏
+- [AutoScrollLayout](https://github.com/leiyun1993/AutoScrollLayout) - 仿淘宝首页热点新闻滚动，类中奖滚动，自动滚动文字、View、跑马灯
 - [Banner](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/banner) - 轮播图
 - [Button](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/button) - 按钮 
+- [ colorpicker](https://github.com/kristiyanP/colorpicker) - 颜色选择器
+- [chart]
 - [Dialog](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/dialog) - 各种弹框、loadingView、PopupWidow、日历选择器、地址选择器
 - [EditText](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/edittext) -- 编辑框
+- [FinancialCustomerView](https://github.com/Tophold/FinancialCustomerView) - 各种金融类的自定义View
+- [购物车](https://github.com/DickyQie/android-shoppingcart)
 - [Keyboard](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/keyboard) -- 键盘
 - [Layer-list](https://www.jianshu.com/p/9e6d03ab7ac9) - Android 图层
+- [LSettingView](https://github.com/leonHua/LSettingView) - 非常常用的设置界面条目 very useful setting item
 - [Menu](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/menu) - 菜单
 - [NavigationBar](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/navigationbar) - 底部导航栏
 - [PhotoPicker](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/photopicker) - 图片选择器
+- [QrCode](https://github.com/jenly1314/ZXingLite) - ZXing 精简版，扫码识别速度快如微信。
+- [recurpickerlib](https://github.com/maltaisn/recurpickerlib) - 递归选择器视图和 dialog
 - [RefreshLayout](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/refreshlayout) - 上拉加载，下拉刷新
 - [SlideMenuLayout](https://github.com/JingYeoh/SlideMenuLayout) - 侧滑导航菜单
 - [StatusBar](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/statusbar) - 状态栏
+- [StackLabel](https://github.com/kongzue/StackLabel) - 堆叠标签
 - [SnackBar](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/snackbar) - 是Android支持库中用于显示简单消息并且提供和用户的一个简单操作的一种弹出式提醒。
 - [SpannableString](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/spannablestring) - 为字符串指定下标区间内的子字符串设置格式。
 - [TabLayout](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/tablayout) - 指示器
+- [TagViewGroup](https://github.com/shellljx/TagViewGroup) - Android 仿小红书图片标签Group
 - [Toast](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/toast) - 吐司
 - [TextView](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/textview) - 文本
 
