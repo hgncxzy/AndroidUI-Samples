@@ -8,10 +8,11 @@
 - [AutoScrollLayout](https://github.com/leiyun1993/AutoScrollLayout) - 仿淘宝首页热点新闻滚动，类中奖滚动，自动滚动文字、View、跑马灯
 - [Banner](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/banner) - 轮播图
 - [Button](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/button) - 按钮 
-- [ colorpicker](https://github.com/kristiyanP/colorpicker) - 颜色选择器
-- [chart](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/chart)
+- [Colorpicker](https://github.com/kristiyanP/colorpicker) - 颜色选择器
+- [Chart](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/chart)
 - [Dialog](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/dialog) - 各种弹框、loadingView、PopupWidow、日历选择器、地址选择器
 - [EditText](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/edittext) -- 编辑框
+- [ViewPager](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/viewpager)
 - [FinancialCustomerView](https://github.com/Tophold/FinancialCustomerView) - 各种金融类的自定义View
 - [购物车](https://github.com/DickyQie/android-shoppingcart)
 - [Keyboard](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/keyboard) -- 键盘
@@ -21,7 +22,7 @@
 - [NavigationBar](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/navigationbar) - 底部导航栏
 - [PhotoPicker](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/photopicker) - 图片选择器
 - [QrCode](https://github.com/jenly1314/ZXingLite) - ZXing 精简版，扫码识别速度快如微信。
-- [recurpickerlib](https://github.com/maltaisn/recurpickerlib) - 递归选择器视图和 dialog
+- [Recurpickerlib](https://github.com/maltaisn/recurpickerlib) - 递归选择器视图和 dialog
 - [RefreshLayout](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/refreshlayout) - 上拉加载，下拉刷新
 - [SlideMenuLayout](https://github.com/JingYeoh/SlideMenuLayout) - 侧滑导航菜单
 - [StatusBar](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/statusbar) - 状态栏
@@ -32,6 +33,7 @@
 - [TagViewGroup](https://github.com/shellljx/TagViewGroup) - Android 仿小红书图片标签Group
 - [Toast](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/toast) - 吐司
 - [TextView](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/textview) - 文本
+- [WebView](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/webview)
 
 ### 综合资源开源库
 
@@ -161,6 +163,7 @@
 ### UI 设计
 
 - [MATERIAL DESIGN](https://material.io/)
+- [material-components-android](https://github.com/material-components/material-components-android)
 
 # AndroidUI - Solutions
 

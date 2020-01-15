@@ -5,3 +5,8 @@
 ### [ExpandableText-Example](https://github.com/MrTrying/ExpandableText-Example)
 
 仿小红书实现的文本展开/收起的功能.
+
+### [AutoLinkTextViewV2](https://github.com/armcha/AutoLinkTextViewV2)
+
+AutoLinkTextView is a TextView that supports automatic detection of Hashtags (#), Mentions (@) , URLs (http://), Phone Nubers and emails
+
