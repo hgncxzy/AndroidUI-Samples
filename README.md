@@ -9,7 +9,7 @@
 - [Banner](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/banner) - 轮播图
 - [Button](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/button) - 按钮 
 - [ colorpicker](https://github.com/kristiyanP/colorpicker) - 颜色选择器
-- [chart]
+- [chart](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/chart)
 - [Dialog](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/dialog) - 各种弹框、loadingView、PopupWidow、日历选择器、地址选择器
 - [EditText](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/edittext) -- 编辑框
 - [FinancialCustomerView](https://github.com/Tophold/FinancialCustomerView) - 各种金融类的自定义View
