@@ -11,5 +11,7 @@
 
 PlayTabLayout is a tab layout very similar to Google Play tab layout. The main feature is that ripple shows in a particular place where user taps.
 
+## [csdn](https://blog.csdn.net/yechaoa/article/details/103975634)
 
+Kotlin APP首页主流框架搭建DrawerLayout+NavigationView+Toolbar+ViewPager+BottomNavigationView
 
