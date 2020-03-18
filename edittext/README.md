@@ -10,3 +10,6 @@
 
 TextInputLayout+TextInputEditText 打造精美的登录界面.
 
+### [XEditText](https://github.com/hgncxzy/XEditText)
+
+各种输入框的实现（带删除图标、仿支付宝支付--带了数字键盘） 

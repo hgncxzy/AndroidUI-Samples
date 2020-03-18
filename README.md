@@ -21,7 +21,7 @@
 - [Menu](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/menu) - 菜单
 - [NavigationBar](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/navigationbar) - 底部导航栏
 - [PhotoPicker](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/photopicker) - 图片选择器
-- [QrCode](https://github.com/jenly1314/ZXingLite) - ZXing 精简版，扫码识别速度快如微信。
+- [QrCode](https://github.com/jenly1314/ZXingLite) - ZXing 精简版，扫码识别速度快如微信。或者看我自己写的[demo](https://github.com/hgncxzy/QRCodeScanDemo)
 - [Recurpickerlib](https://github.com/maltaisn/recurpickerlib) - 递归选择器视图和 dialog
 - [RefreshLayout](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/refreshlayout) - 上拉加载，下拉刷新
 - [SlideMenuLayout](https://github.com/JingYeoh/SlideMenuLayout) - 侧滑导航菜单
