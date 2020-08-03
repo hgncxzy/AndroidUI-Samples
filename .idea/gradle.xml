@@ -29,6 +29,7 @@
             <option value="$PROJECT_DIR$/spannablestring" />
             <option value="$PROJECT_DIR$/statusbar" />
             <option value="$PROJECT_DIR$/tablayout" />
+            <option value="$PROJECT_DIR$/textinputlayout" />
             <option value="$PROJECT_DIR$/textview" />
             <option value="$PROJECT_DIR$/toast" />
             <option value="$PROJECT_DIR$/viewpager" />
