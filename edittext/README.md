@@ -13,3 +13,8 @@ TextInputLayout+TextInputEditText 打造精美的登录界面.
 ### [XEditText](https://github.com/hgncxzy/XEditText)
 
 各种输入框的实现（带删除图标、仿支付宝支付--带了数字键盘） 
+
+[TextInputLayout](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/textinputlayout)
+
+TextInputLayout的作用是将EditText包裹起来，使得EditText的android:hint属性的值以浮动标签的形式显示出来，同时可以通过setErrorEnabled(boolean)设置是否显示一个错误信息和setError(CharSequence)来显示错误信息。并对编辑框带删除图标、密码显示与隐藏切换等需求实现非常方便。
+
