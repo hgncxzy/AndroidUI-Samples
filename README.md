@@ -37,6 +37,19 @@
 - [TextView](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/textview) - 文本
 - [WebView](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/webview)
 
+### Material Design 新控件
+
+[TextInputLayout（文本输入布局）](https://blog.csdn.net/qq_20785431/article/details/52270466)
+[TabLayout（选项卡布局）](https://www.jianshu.com/p/fde38f367019)
+[Snackbar](https://www.jianshu.com/p/f38a20b8aa32)
+[FloatingActionButton（浮动按钮）](https://www.jianshu.com/p/9b0304b17f26)
+[NavigationView(导航视图)](https://www.jianshu.com/p/eacea0f9c52b)
+[AppBarLayout（应用程序栏布局）](https://www.jianshu.com/p/94ceeb8bbf87)
+[CoordinatorLayout（协作布局）](https://blog.csdn.net/qq_20785431/article/details/95076071)
+[CollapsingToolbarLayout（折叠工具栏布局）](https://www.jianshu.com/p/a35942e4945a)
+
+参考
+
 ### 综合资源开源库
 
 - [GitHub上受欢迎的Android UI Library](https://hndeveloper.github.io/2017/github-android-ui.html) - 红鸟网络Android团队Blog
