@@ -30,6 +30,7 @@
 - [StackLabel](https://github.com/kongzue/StackLabel) - 堆叠标签
 - [SnackBar](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/snackbar) - 是Android支持库中用于显示简单消息并且提供和用户的一个简单操作的一种弹出式提醒。
 - [SpannableString](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/spannablestring) - 为字符串指定下标区间内的子字符串设置格式。
+- [Spinner](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/spinner) - 联动 spinner 用法
 - [TabLayout](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/tablayout) - 指示器
 - [TagViewGroup](https://github.com/shellljx/TagViewGroup) - Android 仿小红书图片标签Group
 - [TextInputLayout](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/textinputlayout)
