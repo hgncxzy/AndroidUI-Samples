@@ -53,6 +53,8 @@
 
 ### 综合资源开源库
 
+- [Android 精品开源库]([https://github.com/hgncxzy/AndroidUI-Samples/blob/master/Android%E4%BC%98%E8%B4%A8%E6%BA%90%E7%A0%81.md](https://github.com/hgncxzy/AndroidUI-Samples/blob/master/Android优质源码.md))
+
 - [GitHub上受欢迎的Android UI Library](https://hndeveloper.github.io/2017/github-android-ui.html) - 红鸟网络Android团队Blog
 
   海量开源 UI 资源，鼎力推荐。防止该网页无法访问，可以访问[备份链接](https://github.com/hgncxzy/AndroidUI-Samples/blob/master/GitHub上受欢迎的Android%20UI%20Library-备份.md)。主要包含以下控件：
