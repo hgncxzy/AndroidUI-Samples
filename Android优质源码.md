@@ -38,7 +38,8 @@
 #### [文字输入框 (EditText)](http://www.jcodecraeer.com/plus/list_tid_31_codecategory_11000.html)
 
 1. [一个原生的富文本编辑器，支持html的导入与导出](https://github.com/mthli/Knife)
-2. 
+2. [类似新浪微博EditText，可@某人，#插入话题，表情](https://github.com/change9326/RichEditor)
+3. 
 
 #### [对话框 (dialog)](http://www.jcodecraeer.com/plus/list_tid_31_codecategory_1000.html)
 
@@ -74,6 +75,8 @@
 6. [非常不错的图片选择器，功能完善，动画超赞](https://github.com/andremion/Louvre)
 7. [一种浏览相册的交互效果](https://github.com/CrazyPumPkin/DragMoreScrollView)
 8. [为图片添加水印，水印可以是文字或者其它图片](https://github.com/vinaygaba/RubberStamp)
+9. [一个加载高清大图支持缩放的控件](https://github.com/EvilBT/HDImageView)
+10. 
 
 #### View Effects
 
@@ -91,6 +94,9 @@
 4. [一个竖直方向的SlidingPanelLayout，支持加载多个Panel，可以灵活地实现漂亮的的交互效果](https://github.com/woxingxiao/SlidingUpPanelLayout)
 5. [Android智能下拉刷新框架，支持越界回弹，集成了几十种炫酷的Header和 Footer](https://github.com/scwang90/SmartRefreshLayout)
 6. [点赞头像列表，堆叠效果，叠加效果](https://github.com/wanghaofei/PriseLayout)
+7. [另一种风格的抽屉布局](https://github.com/PSD-Company/duo-navigation-drawer)
+8. [仿Nice首页图片列表9图样式，并实现拖拽效果](https://github.com/wobiancao/ImageNice9Layout)
+9. 
 
 #### Menu
 
@@ -98,6 +104,8 @@
 2. [一行代码搞定Android弧形卫星动画菜单，支持上下左右四个方向展开，支持自定义菜单图标大小，支持是否显示子菜单文字，支持不确定个数的菜单,可扩展性强](https://github.com/chenshouyin/SatelliteMenu)
 3. [一个具有弹力效果的抽屉菜单](https://github.com/peng8350/JPSpringMenu)
 4. [一个漂亮的下拉视图，自带箭头动画](https://github.com/AnthonyFermin/DropDownView)
+5. [基于Material Design设计的环形菜单控件](https://github.com/DingMouRen/AnnularMenuView)
+6. 
 
 #### [Navigation  View]
 
@@ -111,6 +119,8 @@
 4. [版本检测升级（更新）库，集成了检测版本、下载版本以及自动安装升级](https://github.com/AlexLiuSheng/CheckVersionLib)
 5. [基于RxJava2+Retrofit2精心打造的Android基础框架，包含网络、上传、下载、缓存、事件总线、权限管理、数据库、图片加载、UI模块，基本都是项目中必用功能，每个模块充分解耦，可自由拓展](https://github.com/xiaoyaoyou1212/XSnow)
 6. [Android 版本更新，支持get,post请求，支持进度显示，对话框进度条，和通知栏进度条展示 ，支持后台下载 支持强制更新 支持简单主题色配置](https://github.com/WVector/AppUpdate)
+7. [本库是一款基于Retrofit2+RxJava实现简单易用的网络请求框架，结合android平台特性的网络封装库,采用api链式调用一点到底,集成cookie管理,多种缓存模式,极简https配置,上传下载进度显示,请求错误自动重试,请求携带token、时间戳、签名sign动态配置,自动登录成功后请求重发功能,3种层次的参数设置默认全局局部,默认标准ApiResult同时可以支持自定义的数据结构，已经能满足现在的大部分网络请求。](https://github.com/zhou-you/RxEasyHttp)
+8. [一行代码实现 Okhttp,Retrofit,Glide 下载上传进度监听](https://github.com/JessYanCoding/ProgressManager)
 
 #### [其他 (Others)](http://www.jcodecraeer.com/plus/list_tid_31_codecategory_20500.html)
 
@@ -122,6 +132,7 @@
 6. [国产手机5.0、6.0权限适配框架/编译时注解框架/an Android Runtime Permissions Tool by using APT](https://github.com/jokermonn/permissions4m)
 7. [Android开发人员不得不收集的工具类集合 |Android开发过程经常需要用到各式各样的工具类，虽然大部分只需谷歌/百度一下就能找到； 但是有时候急需使用却苦苦搜寻不到，于是整理了自己平常用到的工具类，以便以后的使用](https://github.com/vondear/RxTools)
 8. [自定义LinearLayout，支持自动换行，指定行数,实现流式布局，也支持网格布局](https://github.com/LRH1993/AutoFlowLayout)
+9. [动态控制vector drawable](https://github.com/harjot-oberai/VectorMaster)
 
 #### [进度条 (ProgressBar)](http://www.jcodecraeer.com/plus/list_tid_31_codecategory_7000.html)
 
@@ -147,6 +158,10 @@
 3. [使用RecyclerView，自定义LayoutManager实现旋转木马相册效果](https://github.com/ChenLittlePing/RecyclerCoverFlow)
 4. [对RecyclerView的封装，使用简单，功能丰富](https://github.com/LRH1993/recyclerview_helper)
 5. [一个类似摩天轮的布局管理器](https://github.com/cdflynn/turn-layout-manager)
+6. [一个多功能的Recyclerview Adapter控件，支持多类型item，单选，多选，侧滑删除，拖拽等](https://github.com/DevAhamed/MultiViewAdapter)
+7. [一个基于LayoutManager的卡片划动效果](https://github.com/Ramotion/cardslider-android)
+8. [利用RecyclerView.ItemDecoration实现顶部悬浮效果](https://github.com/Gavin-ZYX/StickyDecoration)
+9. 
 
 #### Segment
 
@@ -165,6 +180,8 @@
 #### [滑杆 (Slider)](http://www.jcodecraeer.com/plus/list_tid_31_codecategory_8500.html)
 
 1. [一个介绍热门电影的客户端，数据来自The Movie DB，这是Udacity微学位工程的一部分](https://github.com/vpaliyX/PopularMovies)
+2. [android实现的反人类音量滑块](https://github.com/shellljx/FuckingVolumeSlider)
+3. 
 
 #### StatusBar
 
@@ -173,6 +190,11 @@
 #### TabLayout
 
 1. [具有连续反馈动画的 Tab Layout](https://github.com/Andy671/Dachshund-Tab-Layout)
+2. 
+
+#### [提示 (tip)](http://www.jcodecraeer.com/plus/list_tid_31_codecategory_500.html)
+
+1. [一个带箭头的工具提示条，可设置是否自动隐藏](https://github.com/florent37/ViewTooltip)
 2. 
 
 #### ToolBar/ActionBar
@@ -196,6 +218,13 @@
 7. [一个安卓的命令行终端](https://github.com/termux/termux-app)
 8. [精仿今日头条，数据是抓取今日头条App的数据。使用RxJava + Retrofit + MVP开发的开源项目，仅供学习用途](https://github.com/chaychan/TouTiao)
 9. [一个轻量级的Youtube客户端，直接解析web页面获得数据](https://github.com/TeamNewPipe/NewPipe)
+10. [一个第三方的 Dribbble 客户端](https://github.com/gejiaheng/Protein)
+11. 
+
+#### [网页 (Webview)](http://www.jcodecraeer.com/plus/list_tid_31_codecategory_12000.html)
+
+1. [自定义webview长按文本弹出选项，并且点击后返回选项与所选中的文本，你的webview不再只支持系统的复制等功能了，长按web文本实现文本一键收藏、分享，就是这么简单。（注：通过和js交互实现）](https://github.com/CarGuo/CustomActionWebView)
+2. 
 
 #### [开发框架](http://www.jcodecraeer.com/plus/list_tid_31_codecategory_21500.html)
 
@@ -205,4 +234,6 @@
 #### [插件机制](http://www.jcodecraeer.com/plus/list_tid_31_codecategory_21000.html)
 
 1. [滴滴插件化项目 VirtualAPK 开源](https://github.com/didi/VirtualAPK)
-2. 
+2. [360开源的一个灵活、稳定、易于使用的Android插件框架](https://github.com/Qihoo360/RePlugin)
+3. 
+
