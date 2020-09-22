@@ -53,21 +53,25 @@
 
 1. [一个原生的富文本编辑器，支持html的导入与导出](https://github.com/mthli/Knife)
 2. [类似新浪微博EditText，可@某人，#插入话题，表情](https://github.com/change9326/RichEditor)
-3. 
+3. [带删除功能的EditText；显示或者隐藏密码；可设置自动添加分隔符分割电话号码、银行卡号等；支持禁止Emoji表情符号输入](https://github.com/woxingxiao/XEditText)
 
 #### [对话框 (dialog)](http://www.jcodecraeer.com/plus/list_tid_31_codecategory_1000.html)
 
 1. [打开动画morphing 动效的Material dialog](https://github.com/AdityaAnand1/Morphing-Material-Dialogs)
 2. 
 
-#### [文字输入框 (EditText)](http://www.jcodecraeer.com/plus/list_tid_31_codecategory_11000.html)
-
-1. [带删除功能的EditText；显示或者隐藏密码；可设置自动添加分隔符分割电话号码、银行卡号等；支持禁止Emoji表情符号输入](https://github.com/woxingxiao/XEditText)
-2. 
-
 #### [文件管理(file)](http://www.jcodecraeer.com/plus/list_tid_31_codecategory_4000.html)
 
 1. [一个简单的文件／目录对话框](https://github.com/FirzenYogesh/FileListerDialog)
+2. [下载可以很简单](https://github.com/AriaLyy/Aria)
+3. [Android 检索手机目录方式的文件选择器，轻量且界面友好，定制性高](https://github.com/leonHua/LFilePicker)
+4. [一个文件与目录的选择器，支持在选择界面创建目录](https://github.com/codekidX/storage-chooser)
+5. [图片与文档选择器](https://github.com/DroidNinja/Android-FilePicker)
+6. [多种类型的文件选择器](https://github.com/fishwjy/MultiType-FilePicker)
+7. [Material文件选择](https://github.com/nbsp-team/MaterialFilePicker)
+8. [一个支持单选多选，可以选择文件或者目录的文件选择对话框，非常流畅](https://github.com/DroidNinja/Android-FilePicker)
+9. [又一个简洁的文件选择器，特点如下：可以选择文件；可以选择目录；可以选择多个文件或者目录；支持按过滤条件选择；支持排序；可以创建新的目录](https://github.com/bartwell/ExFilePicker)
+10. [一个功能比较完善的文件管理器源码，材料设计风格，运行流畅，可以设置多种颜色主题](https://github.com/arpitkh96/AmazeFileManager)
 
 #### [手势交互 (Gesture)](http://www.jcodecraeer.com/plus/list_tid_31_codecategory_16500.html)
 
