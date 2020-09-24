@@ -60,6 +60,23 @@
 1. [打开动画morphing 动效的Material dialog](https://github.com/AdityaAnand1/Morphing-Material-Dialogs)
 2. 
 
+#### [工具条(Toolbar/actionbar)](http://www.jcodecraeer.com/plus/list_tid_31_codecategory_6000.html)
+
+1. [一个处理SystemBar（状态栏和底部导航）的工具类，包括状态栏透明，只有一个SystemBarHelper类。这应该就是Bilibili所使用的方式](https://github.com/H07000223/FlycoSystemBar)
+2. [一个可以在列表滚动的时候改变阴影的toolbar，遵循Material Design](https://github.com/HugoCastelani/waterfall-toolbar)
+3. [一个无限滚动的底部导航，支持横竖屏布局](https://github.com/Cleveroad/LoopBar)
+4. [一个果冻肉效果的Toolbar，动画超赞。](https://github.com/Yalantis/JellyToolbar)
+5. [一个可以在任何时候扩展与折叠的toolbar](https://github.com/badoualy/morphy-toolbar)
+6. [这是一个为Android App 设置状态栏的工具类， 可以在4.4及其以上系统中实现 沉浸式状态栏/状态栏变色，支持设置状态栏透明度](https://github.com/laobie/StatusBarUtil)
+7. [为app的title增加左右、上下、3d变换（Transition）效果](https://github.com/MoshDev/AndroidIndicators)
+8. [一个弹性效果的抽屉菜单，灵感来自一张概念图，实际效果实现了70%，总的来说还算可以。又是一次贝塞尔曲线的应用](https://github.com/mxn21/FlowingDrawer)
+9. [毛玻璃效果的actionbar](https://github.com/ManuelPeinado/GlassActionBar)
+10. [在4.4的translucent 模式下（translucent modes），为状态栏以及导航栏设置背景颜色](https://github.com/jgilfelt/SystemBarTint)
+11. [一个与内容合二为一的ActionBar动画效果,让你的actionbar更生动。这种效果的好处是让actionbar也成为了内容的一部分，除了actionbar渐渐出现的效果外，背景图片还有一种称之为 Ken Burns effect 的动态效果。](https://github.com/flavienlaurent/NotBoringActionBar)
+12. [使用Appcompat 实现Material Design与Toolbar相关的一些功能 。包括：Material Design Theme *Toolbar *NavigationDrawer *new SlidingTabLayout *ViewPager *Material FloatingActionButton *Material CircularProgressBar *SwitchCompat from Appcompat *EditText from Appcompat *Checkbox from Appcompat alt tag](https://github.com/tekinarslan/AndroidMaterialDesignToolbar)
+13. [一个方便你让你在actionbar上显示数字提示的库（这种效果称为badge ）。其实现原理是利用了menu菜单资源文件属性actionLayout](https://github.com/mikepenz/Android-ActionItemBadge)
+14. 
+
 #### [文件管理(file)](http://www.jcodecraeer.com/plus/list_tid_31_codecategory_4000.html)
 
 1. [一个简单的文件／目录对话框](https://github.com/FirzenYogesh/FileListerDialog)
