@@ -1,113 +1,137 @@
+
 package com.xzy.study.recyclerview.test003;
 
-import android.os.Handler;
-
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Toast;
+import android.os.Handler;
+import android.os.Looper;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.xzy.study.recyclerview.R;
-import com.xzy.study.recyclerview.test003.refresh.PullToRefreshRecycleView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
- * 自定义实现上拉刷新+下拉加载
- * 参考 https://blog.csdn.net/meijian531161724/article/details/50887391?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2.control&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2.control
- *
  * @author xzy
  */
-public class RecyclerViewActivity03 extends AppCompatActivity {
+public class RecyclerViewActivity03 extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener {
+    private SwipeRefreshLayout refreshLayout;
+    private RecyclerView recyclerView;
+    private List<String> list;
 
-    private RecyclerView mRv;
-    private CustomAdapter mAdapter;
-    private ArrayList<String> datas;
-    private PullToRefreshRecycleView mPRRV;
-
-    private Handler mHandler = new Handler();
-
-    private int page = 1;
+    private int lastVisibleItem = 0;
+    private final int PAGE_COUNT = 20;
+    private final int TOTAL_COUNT = 60;
+    private LinearLayoutManager mLayoutManager;
+    private RecyclerViewAdapter adapter;
+    private final Handler mHandler = new Handler(Looper.getMainLooper());
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main03);
-        mPRRV = findViewById(R.id.pull_to_refresh_rv);
-        mPRRV.isFirst = true;
+        setContentView(R.layout.activity_main04);
         initData();
+        findView();
+        initRefreshLayout();
+        initRecyclerView();
+    }
 
-        mPRRV.setOnRefreshListener(new PullToRefreshRecycleView.OnRefreshListener() {
+    private void initData() {
+        list = new ArrayList<>();
+        for (int i = 1; i <= TOTAL_COUNT; i++) {
+            list.add("条目" + i);
+        }
+    }
+
+    private void findView() {
+        refreshLayout = findViewById(R.id.refreshLayout);
+        recyclerView = findViewById(R.id.recyclerView);
+    }
+
+    private void initRefreshLayout() {
+        refreshLayout.setColorSchemeResources(android.R.color.holo_blue_light, android.R.color.holo_red_light,
+                android.R.color.holo_orange_light, android.R.color.holo_green_light);
+        refreshLayout.setOnRefreshListener(this);
+        refreshLayout.setRefreshing(true);
+    }
+
+    private void initRecyclerView() {
+        mLayoutManager = new LinearLayoutManager(this);
+        mLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        recyclerView.setLayoutManager(mLayoutManager);
+
+        // 首次模拟加载数据
+        mHandler.postDelayed(() -> {
+            adapter = new RecyclerViewAdapter(getData(0, PAGE_COUNT), RecyclerViewActivity03.this, getData(0, PAGE_COUNT).size() > 0);
+            recyclerView.setAdapter(adapter);
+            refreshLayout.setRefreshing(false);
+        }, 2000);
+
+        // 上拉加载更多
+        recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
-            public void onPullDownRefresh() {
-                mHandler.postDelayed(() -> {
-                    datas.add(0, "add" + System.currentTimeMillis());
-                    mAdapter.notifyDataSetChanged();
-                    mPRRV.completeRefresh();
-                }, 2000);
+            public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
+                super.onScrollStateChanged(recyclerView, newState);
+                if (newState == RecyclerView.SCROLL_STATE_IDLE) {
+                    if (!adapter.isFadeTips() && lastVisibleItem + 1 == adapter.getItemCount()) {
+                        mHandler.postDelayed(() -> updateRecyclerView(adapter.getRealLastPosition(), adapter.getRealLastPosition() + PAGE_COUNT), 500);
+                    }
+                    if (adapter.isFadeTips() && lastVisibleItem + 2 == adapter.getItemCount()) {
+                        mHandler.postDelayed(() -> updateRecyclerView(adapter.getRealLastPosition(), adapter.getRealLastPosition() + PAGE_COUNT), 500);
+                    }
+                }
             }
 
             @Override
-            public void onLoadMore() {
-                mHandler.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        page++;
-                        if (page == 3) {
-                            // 模拟无数据
-                            mPRRV.setFooterViewState(PullToRefreshRecycleView.TYPE_NO_MORE_DATA);
-
-                        } else {
-                            datas.add("Create good memories today, so that you can have a good past");
-                            datas.add("Blog : http://blog.csdn.net/Leejizhou.");
-                            datas.add("A good laugh and a long sleep are the best cures in the doctor's book.");
-                            datas.add("Be nice to people on the way up, because you'll need them on your way down.");
-                            datas.add("all or nothing, now or never");
-                            datas.add("Blessed is he whose fame does not outshine his truth.");
-
-                            mAdapter.notifyDataSetChanged();
-                            mPRRV.completeLoadMore();
-                        }
-
-                    }
-                }, 1000);
-
+            public void onScrolled(@NonNull RecyclerView recyclerView, int dx, int dy) {
+                super.onScrolled(recyclerView, dx, dy);
+                lastVisibleItem = mLayoutManager.findLastVisibleItemPosition();
             }
         });
     }
 
-    private void initData() {
-        datas = new ArrayList<>();
-        mAdapter = new CustomAdapter(datas);
-        mPRRV.setAdapter(mAdapter);
+    /**
+     * 获取新的数据
+     *
+     * @param firstIndex 起始位置
+     * @param lastIndex  结束为止
+     * @return 获取到的新的 list 数据
+     */
+    private List<String> getData(final int firstIndex, final int lastIndex) {
+        List<String> resList = new ArrayList<>();
+        for (int i = firstIndex; i < lastIndex; i++) {
+            if (i < list.size()) {
+                resList.add(list.get(i));
+            }
+        }
+        return resList;
+    }
 
+    private void updateRecyclerView(int fromIndex, int toIndex) {
+        // 获取新的数据
+        List<String> newData = getData(fromIndex, toIndex);
+        if (newData.size() > 0) {
+            adapter.updateList(newData, true);
+        } else {
+            adapter.updateList(null, false);
+        }
+    }
 
-        datas.add("Create good memories today, so that you can have a good past");
-        datas.add("Blog : http://blog.csdn.net/Leejizhou.");
-        datas.add("A good laugh and a long sleep are the best cures in the doctor's book.");
-        datas.add("Be nice to people on the way up, because you'll need them on your way down.");
-        datas.add("all or nothing, now or never");
-        datas.add("Blessed is he whose fame does not outshine his truth.");
-        datas.add("Create good memories today, so that you can have a good past");
-        datas.add("Blog : http://blog.csdn.net/Leejizhou.");
-        datas.add("A good laugh and a long sleep are the best cures in the doctor's book.");
-        datas.add("Be nice to people on the way up, because you'll need them on your way down.");
-        datas.add("all or nothing, now or never");
-        datas.add("Blessed is he whose fame does not outshine his truth.");
-        datas.add("Create good memories today, so that you can have a good past");
-        datas.add("Blog : http://blog.csdn.net/Leejizhou.");
-        datas.add("A good laugh and a long sleep are the best cures in the doctor's book.");
-        datas.add("Be nice to people on the way up, because you'll need them on your way down.");
-        datas.add("all or nothing, now or never");
-        datas.add("Blessed is he whose fame does not outshine his truth.");
-
-
-        mHandler.postDelayed(() -> {
-
-            mAdapter.notifyDataSetChanged();
-            mPRRV.completeRefresh();
-        }, 50);
+    @Override
+    public void onRefresh() {
+        refreshLayout.setRefreshing(true);
+        adapter.resetDatas();
+        updateRecyclerView(0, PAGE_COUNT);
+        mHandler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                refreshLayout.setRefreshing(false);
+            }
+        }, 1000);
     }
 }

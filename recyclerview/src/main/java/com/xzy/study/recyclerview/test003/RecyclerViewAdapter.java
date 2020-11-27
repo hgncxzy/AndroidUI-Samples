@@ -1,4 +1,4 @@
-package com.xzy.study.recyclerview.test004;
+package com.xzy.study.recyclerview.test003;
 
 import android.content.Context;
 import android.os.Handler;
@@ -21,7 +21,7 @@ import java.util.List;
  * @date ：2020/11/27
  */
 @SuppressWarnings("AlibabaAvoidCommentBehindStatement")
-public class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     /**
      * 数据源.
      */
@@ -58,7 +58,7 @@ public class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private final Handler mHandler = new Handler(Looper.getMainLooper());
 
 
-    public MyAdapter(List<String> stringList, Context context, boolean hasMore) {
+    public RecyclerViewAdapter(List<String> stringList, Context context, boolean hasMore) {
         // 初始化变量
         this.stringList = stringList;
         this.context = context;
@@ -199,5 +199,4 @@ public class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         this.hasMore = hasMore;
         notifyDataSetChanged();
     }
-
 }

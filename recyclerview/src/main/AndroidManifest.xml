@@ -19,7 +19,6 @@
         <activity android:name=".test001.RecyclerViewActivity01" />
         <activity android:name=".test002.RecyclerViewActivity02" />
         <activity android:name=".test003.RecyclerViewActivity03" />
-        <activity android:name=".test004.RecyclerViewActivity04" />
     </application>
 
 </manifest>
