@@ -16,7 +16,8 @@ import java.util.ArrayList;
 
 /**
  * 自定义实现上拉刷新+下拉加载
- *参考 https://blog.csdn.net/meijian531161724/article/details/50887391?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2.control&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2.control
+ * 参考 https://blog.csdn.net/meijian531161724/article/details/50887391?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2.control&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2.control
+ *
  * @author xzy
  */
 public class RecyclerViewActivity03 extends AppCompatActivity {
@@ -27,6 +28,8 @@ public class RecyclerViewActivity03 extends AppCompatActivity {
     private PullToRefreshRecycleView mPRRV;
 
     private Handler mHandler = new Handler();
+
+    private int page = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,15 +54,23 @@ public class RecyclerViewActivity03 extends AppCompatActivity {
                 mHandler.postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        datas.add("Create good memories today, so that you can have a good past");
-                        datas.add("Blog : http://blog.csdn.net/Leejizhou.");
-                        datas.add("A good laugh and a long sleep are the best cures in the doctor's book.");
-                        datas.add("Be nice to people on the way up, because you'll need them on your way down.");
-                        datas.add("all or nothing, now or never");
-                        datas.add("Blessed is he whose fame does not outshine his truth.");
+                        page++;
+                        if (page == 3) {
+                            // 模拟无数据
+                            mPRRV.setFooterViewState(PullToRefreshRecycleView.TYPE_NO_MORE_DATA);
 
-                        mAdapter.notifyDataSetChanged();
-                        mPRRV.completeLoadMore();
+                        } else {
+                            datas.add("Create good memories today, so that you can have a good past");
+                            datas.add("Blog : http://blog.csdn.net/Leejizhou.");
+                            datas.add("A good laugh and a long sleep are the best cures in the doctor's book.");
+                            datas.add("Be nice to people on the way up, because you'll need them on your way down.");
+                            datas.add("all or nothing, now or never");
+                            datas.add("Blessed is he whose fame does not outshine his truth.");
+
+                            mAdapter.notifyDataSetChanged();
+                            mPRRV.completeLoadMore();
+                        }
+
                     }
                 }, 1000);
 
