@@ -17,6 +17,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 参考
+ * https://github.com/ryanlijianchang/PullToLoadData-RecyclerView
+ *
  * @author xzy
  */
 public class RecyclerViewActivity03 extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener {
@@ -41,6 +44,9 @@ public class RecyclerViewActivity03 extends AppCompatActivity implements SwipeRe
         initRecyclerView();
     }
 
+    /**
+     * 数据源，模拟数据总量
+     */
     private void initData() {
         list = new ArrayList<>();
         for (int i = 1; i <= TOTAL_COUNT; i++) {
@@ -71,8 +77,25 @@ public class RecyclerViewActivity03 extends AppCompatActivity implements SwipeRe
             recyclerView.setAdapter(adapter);
             refreshLayout.setRefreshing(false);
         }, 2000);
+        loadMore();
+    }
 
-        // 上拉加载更多
+
+    /**
+     * 下拉刷新
+     */
+    @Override
+    public void onRefresh() {
+        refreshLayout.setRefreshing(true);
+        adapter.resetDatas();
+        updateRecyclerView(0, PAGE_COUNT);
+        mHandler.postDelayed(() -> refreshLayout.setRefreshing(false), 1000);
+    }
+
+    /**
+     * 上拉加载更多
+     */
+    private void loadMore() {
         recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
             public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
@@ -95,6 +118,23 @@ public class RecyclerViewActivity03 extends AppCompatActivity implements SwipeRe
         });
     }
 
+
+    /**
+     * 更新 rv
+     *
+     * @param fromIndex 起始位置
+     * @param toIndex   结束位置
+     */
+    private void updateRecyclerView(int fromIndex, int toIndex) {
+        // 获取新的数据
+        List<String> newData = getData(fromIndex, toIndex);
+        if (newData.size() > 0) {
+            adapter.updateList(newData, true);
+        } else {
+            adapter.updateList(null, false);
+        }
+    }
+
     /**
      * 获取新的数据
      *
@@ -110,28 +150,5 @@ public class RecyclerViewActivity03 extends AppCompatActivity implements SwipeRe
             }
         }
         return resList;
-    }
-
-    private void updateRecyclerView(int fromIndex, int toIndex) {
-        // 获取新的数据
-        List<String> newData = getData(fromIndex, toIndex);
-        if (newData.size() > 0) {
-            adapter.updateList(newData, true);
-        } else {
-            adapter.updateList(null, false);
-        }
-    }
-
-    @Override
-    public void onRefresh() {
-        refreshLayout.setRefreshing(true);
-        adapter.resetDatas();
-        updateRecyclerView(0, PAGE_COUNT);
-        mHandler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                refreshLayout.setRefreshing(false);
-            }
-        }, 1000);
     }
 }
