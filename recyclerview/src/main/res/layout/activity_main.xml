@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_55"
+        android:layout_margin="@dimen/dp_5"
+        android:text="多种 Item 加载布局"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_55"
+        android:layout_margin="@dimen/dp_5"
+        android:text="入场/添加/删除/更新 动效"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_55"
+        android:layout_margin="@dimen/dp_5"
+        android:text="下拉刷新/上拉加载 典型方案一"
+        android:textColor="#ffffff" />
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_55"
+        android:layout_margin="@dimen/dp_5"
+        android:text="下拉刷新/上拉加载 典型方案二"
+        android:textColor="#ffffff" />
+</LinearLayout>
