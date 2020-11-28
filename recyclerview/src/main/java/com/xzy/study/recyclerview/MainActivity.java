@@ -8,6 +8,7 @@ import android.os.Bundle;
 import com.xzy.study.recyclerview.test001.RecyclerViewActivity01;
 import com.xzy.study.recyclerview.test002.RecyclerViewActivity02;
 import com.xzy.study.recyclerview.test003.RecyclerViewActivity03;
+import com.xzy.study.recyclerview.test004.demo.RecyclerViewActivity04;
 
 /**
  * @author xzy
@@ -31,9 +32,14 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btn2).setOnClickListener(v -> {
             startActivity(new Intent(this, RecyclerViewActivity02.class));
         });
-        // test004 下拉刷新/上拉加载
+        // test003 下拉刷新/上拉加载
         findViewById(R.id.btn3).setOnClickListener(v -> {
             startActivity(new Intent(this, RecyclerViewActivity03.class));
+        });
+
+        // test004 下拉刷新/上拉加载
+        findViewById(R.id.btn4).setOnClickListener(v -> {
+            startActivity(new Intent(this, RecyclerViewActivity04.class));
         });
 
     }

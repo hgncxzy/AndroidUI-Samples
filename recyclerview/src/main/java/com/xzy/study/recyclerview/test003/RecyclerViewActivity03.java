@@ -37,7 +37,7 @@ public class RecyclerViewActivity03 extends AppCompatActivity implements SwipeRe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main04);
+        setContentView(R.layout.activity_main03);
         initData();
         findView();
         initRefreshLayout();

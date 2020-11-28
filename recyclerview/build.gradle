@@ -39,4 +39,6 @@ dependencies {
 
     // 下拉刷新控件
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+    // test 004 引入的依赖
+    implementation 'io.reactivex:rxandroid:1.2.1'
 }
