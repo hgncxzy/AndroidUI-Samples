@@ -6,7 +6,7 @@ import com.xzy.study.recyclerview.test004.lib.PullRecyclerView;
 
 
 /**
- * Created by ${ChenJC} on 2018/3/12.
+ * @author xzy
  */
 
 public class AppContext extends Application {

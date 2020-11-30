@@ -3,8 +3,8 @@ package com.xzy.study.recyclerview.test004.lib;
 import android.content.Context;
 
 /**
- * Created by ${ChenJC} on 2018/2/24.
  * 上拉更多基类
+ * @author xzy
  */
 
 public abstract class AbRefreshMoreView extends AbRefreshView {

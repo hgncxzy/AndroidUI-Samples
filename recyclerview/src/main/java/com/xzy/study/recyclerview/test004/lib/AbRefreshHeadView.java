@@ -4,8 +4,8 @@ import android.content.Context;
 import android.view.Gravity;
 
 /**
- * Created by ${ChenJC} on 2018/2/24.
  * 下拉刷新基类
+ * @author xzy
  */
 
 public abstract class AbRefreshHeadView extends AbRefreshView {

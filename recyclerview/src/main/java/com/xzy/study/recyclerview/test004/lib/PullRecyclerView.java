@@ -18,7 +18,8 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 
 /**
- * http://blog.csdn.net/a807891033
+ * 参考 http://blog.csdn.net/a807891033
+ * @author xzy
  */
 public class PullRecyclerView extends RecyclerView {
     public static final int HEAD_STATE_NORMAL = 0;

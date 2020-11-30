@@ -9,7 +9,7 @@
     </style>
     <style name="ShapeButton">
         <!-- Customize your theme here. -->
-        <item name="aaa">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>

@@ -12,8 +12,8 @@ import com.xzy.study.recyclerview.R;
 import com.xzy.study.recyclerview.test004.lib.AbRefreshHeadView;
 
 /**
- * Created by ${ChenJC} on 2018/2/24.
  * 下拉demo
+ * @author xzy
  */
 
 public class SimpleRefreshHeadView extends AbRefreshHeadView {

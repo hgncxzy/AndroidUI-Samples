@@ -7,12 +7,14 @@ import android.view.View;
 import android.view.animation.LinearInterpolator;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import com.xzy.study.recyclerview.R;
 import com.xzy.study.recyclerview.test004.lib.AbRefreshMoreView;
 
 /**
- * Created by ${ChenJC} on 2018/2/24.
  * 上拉更多
+ *
+ * @author xzy
  */
 
 public class SimpleRefreshMoreView extends AbRefreshMoreView {

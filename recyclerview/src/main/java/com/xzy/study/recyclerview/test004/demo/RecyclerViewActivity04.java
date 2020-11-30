@@ -3,6 +3,7 @@ package com.xzy.study.recyclerview.test004.demo;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.SystemClock;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
 import com.xzy.study.recyclerview.R;
 import com.xzy.study.recyclerview.test004.lib.PullListener;
 import com.xzy.study.recyclerview.test004.lib.PullRecyclerView;
@@ -19,20 +21,18 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
-import rx.Observable;
-import rx.Subscriber;
-import rx.android.schedulers.AndroidSchedulers;
-import rx.schedulers.Schedulers;
-
 /**
  * 参考 https://blog.csdn.net/a807891033/article/details/79523427
  * 自定义 header 和 footer 的 rv
+ *
+ * @author xzy
  */
 public class RecyclerViewActivity04 extends Activity implements PullListener {
     private Context mContext;
     private PullRecyclerView mPull;
     private List<String> mData;
     private TestAdapter mAdapter;
+    private Handler mHandler = new Handler();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,33 +68,15 @@ public class RecyclerViewActivity04 extends Activity implements PullListener {
     }
 
     private void loadData(final long sleep) {
-        Observable.create(new Observable.OnSubscribe<String[]>() {
+        mHandler.postDelayed(new Runnable() {
             @Override
-            public void call(Subscriber<? super String[]> subscriber) {
-                SystemClock.sleep(sleep);
-                subscriber.onNext(new String[new Random().nextInt(2)]);
-                subscriber.onCompleted();
+            public void run() {
+                String[] arr = new String[new Random().nextInt(10)];
+                mData.addAll(Arrays.asList(arr));
+                mAdapter.notifyItemChanged(mData.size() - arr.length, arr.length);
+                mPull.onComplete(arr.length > 0);
             }
-        }).observeOn(AndroidSchedulers.mainThread())
-                .subscribeOn(Schedulers.io())
-                .subscribe(new Subscriber<String[]>() {
-                    @Override
-                    public void onCompleted() {
-
-                    }
-
-                    @Override
-                    public void onError(Throwable e) {
-
-                    }
-
-                    @Override
-                    public void onNext(String[] arr) {
-                        mData.addAll(Arrays.asList(arr));
-                        mAdapter.notifyItemChanged(mData.size() - arr.length, arr.length);
-                        mPull.onComplete(arr.length > 0);
-                    }
-                });
+        }, sleep);
     }
 
     private class TestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {

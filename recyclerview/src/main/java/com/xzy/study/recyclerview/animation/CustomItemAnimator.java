@@ -30,6 +30,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 @SuppressWarnings("deprecation")
+/**
+ * @author xzy
+ */
 public class CustomItemAnimator extends SimpleItemAnimator {
     private static final boolean DEBUG = false;
 
