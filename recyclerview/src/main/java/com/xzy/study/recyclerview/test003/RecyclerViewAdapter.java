@@ -3,6 +3,7 @@ package com.xzy.study.recyclerview.test003;
 import android.content.Context;
 import android.os.Handler;
 import android.os.Looper;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -37,6 +38,11 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
      * 第二种ViewType，底部的提示View.
      */
     private final int footType = 1;
+
+    /**
+     * 第三种种ViewType，空布局.
+     */
+    private final int emptyType = 2;
 
     /**
      * 是否有更多数据.
@@ -93,8 +99,11 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
      */
     @Override
     public int getItemViewType(int position) {
-        if (position == getItemCount() - 1) {
+
+        if (position == getItemCount() - 1 && stringList.size() > 0) {
             return footType;
+        } else if (stringList.size() == 0) {
+            return emptyType;
         } else {
             return normalType;
         }
@@ -128,13 +137,27 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
         }
     }
 
+    /**
+     * 数据为空时的ViewHolder
+     */
+    static class EmptyHolder extends RecyclerView.ViewHolder {
+        private final TextView tips;
+
+        public EmptyHolder(View itemView) {
+            super(itemView);
+            tips = itemView.findViewById(R.id.tv_empty);
+        }
+    }
+
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         // 根据返回的ViewType，绑定不同的布局文件，这里只有两种
         if (viewType == normalType) {
-            return new NormalHolder(LayoutInflater.from(context).inflate(R.layout.item_custom, parent, false));
+            return new NormalHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.item_custom, parent, false));
+        } else if (viewType == footType) {
+            return new FootHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.item_layout_footer, parent, false));
         } else {
-            return new FootHolder(LayoutInflater.from(context).inflate(R.layout.item_layout_footer, parent, false));
+            return new EmptyHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.item_layout_empty, parent, false));
         }
     }
 
@@ -143,7 +166,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
         // 如果是正常的 item，直接设置TextView的值
         if (holder instanceof NormalHolder) {
             ((NormalHolder) holder).textView.setText(stringList.get(position));
-        } else {
+        } else if (holder instanceof FootHolder) {
             // 之所以要设置可见，是因为我在没有更多数据时会隐藏了这个footView
             ((FootHolder) holder).tips.setVisibility(View.VISIBLE);
             if (getRealLastPosition() < PAGE_COUNT) {

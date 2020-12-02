@@ -13,6 +13,7 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.xzy.study.recyclerview.R;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -72,8 +73,15 @@ public class RecyclerViewActivity03 extends AppCompatActivity implements SwipeRe
         recyclerView.setLayoutManager(mLayoutManager);
 
         // 首次模拟加载数据
+//        mHandler.postDelayed(() -> {
+//            adapter = new RecyclerViewAdapter(getData(0, PAGE_COUNT), RecyclerViewActivity03.this, getData(0, PAGE_COUNT).size() > 0);
+//            recyclerView.setAdapter(adapter);
+//            refreshLayout.setRefreshing(false);
+//        }, 2000);
+
+        // 首次模拟加载空数据
         mHandler.postDelayed(() -> {
-            adapter = new RecyclerViewAdapter(getData(0, PAGE_COUNT), RecyclerViewActivity03.this, getData(0, PAGE_COUNT).size() > 0);
+            adapter = new RecyclerViewAdapter(getData(0, 0), RecyclerViewActivity03.this, getData(0, 0).size() > 0);
             recyclerView.setAdapter(adapter);
             refreshLayout.setRefreshing(false);
         }, 2000);
