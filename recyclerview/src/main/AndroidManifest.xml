@@ -21,6 +21,7 @@
         <activity android:name=".test002.RecyclerViewActivity02" />
         <activity android:name=".test003.RecyclerViewActivity03" />
         <activity android:name=".test004.demo.RecyclerViewActivity04" />
+        <activity android:name=".test005.RecyclerViewActivity05" />
     </application>
 
 </manifest>

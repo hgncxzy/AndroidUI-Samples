@@ -1,3 +1,4 @@
+include ':loadinglayout'
 include ':recyclerview'
 include ':spinner'
 include ':textinputlayout'

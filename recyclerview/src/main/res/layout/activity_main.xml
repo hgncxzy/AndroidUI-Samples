@@ -38,4 +38,12 @@
         android:layout_margin="@dimen/dp_5"
         android:text="下拉刷新/上拉加载 典型方案二"
         android:textColor="#ffffff"/>
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_55"
+        android:layout_margin="@dimen/dp_5"
+        android:text="使用框架实现下拉刷新/上拉加载"
+        android:textColor="#ffffff"/>
 </LinearLayout>

@@ -3,6 +3,7 @@ package com.xzy.refreshlayout;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
 /**
  * 上拉加载，下拉刷新。
  *
@@ -24,6 +25,13 @@ public class MainActivity extends AppCompatActivity {
      * 依赖库地址 https://github.com/genius158/PullRefreshLayout
      */
     private void handle1() {
+
+    }
+
+    /**
+     * 参考项目 recyclerview ，里面包含 rv 动画，多 item ，手动实现 rv 的加载/刷新功能。
+     */
+    private void handle2() {
 
     }
 }

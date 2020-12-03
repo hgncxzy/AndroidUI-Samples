@@ -9,6 +9,7 @@ import com.xzy.study.recyclerview.test001.RecyclerViewActivity01;
 import com.xzy.study.recyclerview.test002.RecyclerViewActivity02;
 import com.xzy.study.recyclerview.test003.RecyclerViewActivity03;
 import com.xzy.study.recyclerview.test004.demo.RecyclerViewActivity04;
+import com.xzy.study.recyclerview.test005.RecyclerViewActivity05;
 
 /**
  * @author xzy
@@ -42,5 +43,9 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(this, RecyclerViewActivity04.class));
         });
 
+        // test005 使用框架实现下拉刷新/上拉加载
+        findViewById(R.id.btn5).setOnClickListener(v -> {
+            startActivity(new Intent(this, RecyclerViewActivity05.class));
+        });
     }
 }

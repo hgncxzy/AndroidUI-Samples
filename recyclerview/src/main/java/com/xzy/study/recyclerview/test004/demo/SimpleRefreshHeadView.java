@@ -31,7 +31,7 @@ public class SimpleRefreshHeadView extends AbRefreshHeadView {
 
     @Override
     protected int onCreateRefreshLimitHeight() {
-        return getScreenHeight() / 4;
+        return getScreenHeight() / 8;
     }
 
     @Override

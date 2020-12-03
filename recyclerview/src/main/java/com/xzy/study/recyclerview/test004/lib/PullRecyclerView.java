@@ -76,7 +76,7 @@ public class PullRecyclerView extends RecyclerView {
         return mHeadRefreshState == HEAD_STATE_REFRESHING && isExistRefreshView();
     }
 
-    //设置头部刷新释放可用
+    //设置头部刷新是否可用
     public PullRecyclerView setUseRefresh(boolean refresh) {
         isCanRefresh = refresh;
         return this;
