@@ -12,6 +12,7 @@
 - [Chart](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/chart)
 - [Dialog](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/dialog) - 各种弹框、loadingView、PopupWidow、日历选择器、地址选择器
 - [EditText](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/edittext) -- 编辑框
+- [LoadingLayout](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/loadinglayout) --简单实用的页面多状态布局(content,loading,empty,error)
 - [ViewPager](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/viewpager)
 - [FinancialCustomerView](https://github.com/Tophold/FinancialCustomerView) - 各种金融类的自定义View
 - [购物车](https://github.com/DickyQie/android-shoppingcart)
@@ -24,6 +25,7 @@
 - [Progressbar](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/progressbar) - 进度条
 - [QrCode](https://github.com/jenly1314/ZXingLite) - ZXing 精简版，扫码识别速度快如微信。或者看我自己写的[demo](https://github.com/hgncxzy/QRCodeScanDemo)
 - [Recurpickerlib](https://github.com/maltaisn/recurpickerlib) - 递归选择器视图和 dialog
+- [RecyclerView](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/recyclerview) - 上拉加载，下拉刷新
 - [RefreshLayout](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/refreshlayout) - 上拉加载，下拉刷新
 - [SlideMenuLayout](https://github.com/JingYeoh/SlideMenuLayout) - 侧滑导航菜单
 - [StatusBar](https://github.com/hgncxzy/AndroidUI-Samples/tree/master/statusbar) - 状态栏
