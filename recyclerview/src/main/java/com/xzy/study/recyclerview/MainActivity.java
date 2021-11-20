@@ -10,6 +10,7 @@ import com.xzy.study.recyclerview.test002.RecyclerViewActivity02;
 import com.xzy.study.recyclerview.test003.RecyclerViewActivity03;
 import com.xzy.study.recyclerview.test004.demo.RecyclerViewActivity04;
 import com.xzy.study.recyclerview.test005.RecyclerViewActivity05;
+import com.xzy.study.recyclerview.test006.recyclerview.RecyclerViewActivity06;
 
 /**
  * @author xzy
@@ -46,6 +47,11 @@ public class MainActivity extends AppCompatActivity {
         // test005 使用框架实现下拉刷新/上拉加载
         findViewById(R.id.btn5).setOnClickListener(v -> {
             startActivity(new Intent(this, RecyclerViewActivity05.class));
+        });
+
+        // test006 下拉刷新/上拉加载/可折叠RV
+        findViewById(R.id.btn41).setOnClickListener(v -> {
+            startActivity(new Intent(this, RecyclerViewActivity06.class));
         });
     }
 }
